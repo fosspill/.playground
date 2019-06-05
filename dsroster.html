@@ -9,11 +9,14 @@ body {
 * {
 margin: 0;
 padding: 0;
+}
+#main{
 line-height : 0px;
 }
 </style>
 </head>
 <body>
+<p id="head"></p>
 <p id="main"></p>
 
 <script>
@@ -27,7 +30,7 @@ fetch('https://xivapi.com/freecompany/9229283011365753108?data=FCM&extended=1')
 		return response.json()
 	})
 	.then(data => {
-		document.getElementById("main").innerHTML += "<h1>" + data["FreeCompany"].Name + "</h1>";
+		document.getElementById("head").innerHTML += "<h1>" + data["FreeCompany"].Name + "</h1>";
 		var memArray = data["FreeCompanyMembers"]
 		getChars(memArray);
 	})
