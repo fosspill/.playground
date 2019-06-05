@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+</style>
+</head>
+<body>
+<p id="main"></p>
+
+<script>
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function getFc() {
+fetch('https://xivapi.com/freecompany/9229283011365753108?data=FCM&extended=1')
+	.then(response => {
+		return response.json()
+	})
+	.then(data => {
+		document.getElementById("main").innerHTML += "<h1>" + data["FreeCompany"].Name + "</h1>";
+		var memArray = data["FreeCompanyMembers"]
+		getChars(memArray);
+	})
+	.catch(err => {
+			    document.getElementById("main").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU <3!";
+			    document.getElementById("main").innerHTML += err;
+})
+
+}
+
+async function getChars(a){
+
+var index, len;
+for (index = 0, len = a.length; index < len; ++index) {
+			fetch('https://xivapi.com/character/' + a[index].ID)
+			  .then(response => {
+			    return response.json()
+			  })
+			  .then(data => {
+			    var pic = document.createElement("img");
+			    pic.src = data["Character"].Portrait;
+			    pic.setAttribute("height", "439");
+			    pic.setAttribute("width", "321");
+			    pic.setAttribute("alt", data["Character"].Name);
+			    document.getElementById("main").appendChild(pic);
+			    console.log(data)
+			    
+			  })
+			  .catch(err => {
+			    document.getElementById("main").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU <3!";
+			    document.getElementById("main").innerHTML += err;
+			  }) 
+	await sleep(100);
+}
+
+}
+
+getFc()
+
+
+</script>
+
+</body>
+</html>
