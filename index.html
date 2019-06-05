@@ -8,18 +8,19 @@
 <p id="demo"></p>
 
 <script>
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-    var myObj = JSON.parse(this.responseText);
-    document.getElementById("demo").innerHTML = myObj.Freecompany.Name;
-  }
-};
-xmlhttp.open("GET", "https://xivapi.com/freecompany/9229283011365753108?data=FCM&extended=1", true);
-xmlhttp.send();
-</script>
+fetch('https://xivapi.com/freecompany/9229283011365753108?data=FCM&extended=1')
+  .then(response => {
+    return response.json()
+  })
+  .then(data => {
+    // Work with JSON data here
+    console.log(data)
+  })
+  .catch(err => {
+    // Do something for an error here
+  })
 
-<p>Take a look at <a href="json_demo.txt" target="_blank">json_demo.txt</a></p>
+</script>
 
 </body>
 </html>
