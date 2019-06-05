@@ -20,6 +20,8 @@ line-height : 0px;
 <p id="main"></p>
 
 <script>
+var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -52,8 +54,15 @@ for (index = 0, len = a.length; index < len; ++index) {
 			  .then(data => {
 			    var pic = document.createElement("img");
 			    pic.src = data["Character"].Portrait;
-			    pic.setAttribute("height", "439");
+			    //pic.setAttribute("height", "439");
+			    
+
+			    if (isMobile) {
+				pic.setAttribute("width", screen.width);
+			    } else {
 			    pic.setAttribute("width", "321");
+			    }
+
 			    pic.setAttribute("alt", data["Character"].Name);
 			    document.getElementById("main").appendChild(pic);
 			    console.log(data)
