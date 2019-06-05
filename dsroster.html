@@ -62,7 +62,7 @@ for (index = 0, len = a.length; index < len; ++index) {
 			    } else {
 			    pic.setAttribute("width", "321");
 			    }
-
+			    pic.setAttribute("title", data["Character"].Name);
 			    pic.setAttribute("alt", data["Character"].Name);
 			    document.getElementById("main").appendChild(pic);
 			    console.log(data)
