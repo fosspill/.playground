@@ -31,11 +31,19 @@ line-height : 0px;
 	position:absolute;
 	top: 10px;
 	left: 5px;
-	font-family: 'eorzearegular';
 }
 
-.static {
+.top-right{
+	position:absolute;
+	top: 10px;
+	right: 5px;
+
+}
+
+
+.static .top-right {
   color: green; 
+	font-family: 'eorzearegular';
 }
 
 
@@ -90,15 +98,20 @@ for (index = 0, len = a.length; index < len; ++index) {
 			  .then(data => {
                 var divmain = document.createElement("div");
                 var divtl = document.createElement("div");
+		var divtr = document.createElement("div");
                 var classes = "chardiv";
 		if (staticgrp.includes(data["Character"].ID)){
 			classes += " static"
+                        divtr.innerHTML = "Static";
 		}
                 divmain.setAttribute("class", classes);
                 divmain.setAttribute("id", data["Character"].ID);
                 
                 divtl.setAttribute("class", "top-left");
                 divtl.innerHTML = data["Character"].Name;
+
+                divtr.setAttribute("class", "top-right");
+
                 
 			    var pic = document.createElement("img");
 			    pic.src = data["Character"].Portrait;
@@ -115,6 +128,7 @@ for (index = 0, len = a.length; index < len; ++index) {
 		        pic.setAttribute("class", "charimg");
 		        divmain.appendChild(pic)
 		        divmain.appendChild(divtl)
+		        divmain.appendChild(divtr)
 		        document.getElementById("main").appendChild(divmain);
 			    //divele.appendChild(data["Character"].ID);
 			    console.log(data)
