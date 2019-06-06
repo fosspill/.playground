@@ -23,6 +23,12 @@ line-height : 0px;
 	top: 10px;
 	left: 5px;
 }
+
+.static {
+  color: green; 
+}
+
+
     
 
 body {
@@ -39,6 +45,7 @@ body {
 
 <script>
 var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+var staticgrp = [20474470, 20474652, 20542583, 23765972, 24368520, 24368612, 21819678, 22962059];
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -51,7 +58,7 @@ fetch("https://xivapi.com/freecompany/9229283011365753108?data=FCM&extended=1")
 	})
 	.then(data => {
 		document.getElementById("head").innerHTML += "<h1>" + data["FreeCompany"].Name + "</h1>";
-		var memArray = data["FreeCompanyMembers"]
+		var memArray = data["FreeCompanyMembers"];
 		getChars(memArray);
 	})
 	.catch(err => {
@@ -73,8 +80,11 @@ for (index = 0, len = a.length; index < len; ++index) {
 			  .then(data => {
                 var divmain = document.createElement("div");
                 var divtl = document.createElement("div");
-                
-                divmain.setAttribute("class", "chardiv");
+                var classes = "chardiv";
+		if (staticgrp.includes(data["Character"].ID)){
+			classes += " static"
+		}
+                divmain.setAttribute("class", classes);
                 divmain.setAttribute("id", data["Character"].ID);
                 
                 divtl.setAttribute("class", "top-left");
@@ -92,10 +102,10 @@ for (index = 0, len = a.length; index < len; ++index) {
 			    }
 			    pic.setAttribute("title", data["Character"].Name);
 			    pic.setAttribute("alt", data["Character"].Name);
-                pic.setAttribute("class", "charimg");
-                divmain.appendChild(pic)
-                divmain.appendChild(divtl)
-                document.getElementById("main").appendChild(divmain);
+		        pic.setAttribute("class", "charimg");
+		        divmain.appendChild(pic)
+		        divmain.appendChild(divtl)
+		        document.getElementById("main").appendChild(divmain);
 			    //divele.appendChild(data["Character"].ID);
 			    console.log(data)
 			    
