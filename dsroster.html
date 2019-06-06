@@ -35,7 +35,7 @@ function sleep(ms) {
 }
 
 async function getFc(fcid) {
-fetch('https://xivapi.com/freecompany/' + fcid + '?data=FCM&extended=1')
+fetch("https://xivapi.com/freecompany/" + fcid + "?data=FCM&extended=1")
 	.then(response => {
 		return response.json()
 	})
