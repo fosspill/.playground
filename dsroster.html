@@ -55,7 +55,7 @@ async function getChars(a){
 
 var index, len;
 for (index = 0, len = a.length; index < len; ++index) {
-            var starttime = Math.floor(Date.now() / 1000)
+            var starttime = Date.now()
 			fetch('https://xivapi.com/character/' + a[index].ID)
 			  .then(response => {
 			    return response.json()
@@ -94,7 +94,7 @@ for (index = 0, len = a.length; index < len; ++index) {
 			    document.getElementById("main").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU <3!";
 			    document.getElementById("main").innerHTML += err;
 			  }) 
-    var endtime = Math.floor(Date.now() / 1000)
+    var endtime = Date.now()
 	await sleep(100 - (endtime - starttime));
 }
 
