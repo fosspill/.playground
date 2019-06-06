@@ -35,7 +35,7 @@ function sleep(ms) {
 }
 
 async function getFc(fcid) {
-fetch("https://xivapi.com/freecompany/" + fcid + "?data=FCM&extended=1")
+fetch("https://xivapi.com/freecompany/9229283011365753108?data=FCM&extended=1")
 	.then(response => {
 		return response.json()
 	})
@@ -100,7 +100,7 @@ for (index = 0, len = a.length; index < len; ++index) {
 
 }
 
-getFc(9229283011365753108)
+getFc()
 
 
 </script>
