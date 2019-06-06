@@ -1,0 +1,13 @@
+<span id="a">user@playground</span>:<span id="b">~</span><span id="c">$</span> cd .playground/<!-- kjsdfhkjdhsfkjdshfkj -->Projects
+<span id="a">user@playground</span>:<span id="b">~</span><span id="c">$</span> cat <!-- kjsdfhkjdhsfkjdshfkj -->.playground<br/><br/>
+My favorite code quote, "<span id="k">Code for Everyone</span>". <!-- sjkfhskjf -->
+
+Hi! You somehow stumbled onto my playground.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>It's hopefully rather obvious that nothing will be gained from reading this.</p>
+<p>But you are, of course, free to do as you wish.</p> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
+<p> I do not plan to offer much in here.</p><!-- kjdhjhgdgldjhgdwtoiewotwotjdfkjdfffsf -->
+<p>Maybe go play with some code yourself. <br><br><br>Check out JavaScript or Python, both are easy to get into and fun to play with.</p><!-- hsdgfhjfkdjhfkjsdhfkjdshfkjsdhfkjsdhkfjhdskjfhksdjhfkdsj -->
+<p> If you really want to see what I do: <br> <a href="https://fosspill.github.io/FFXIV_TexTools_CLI/">FFXIV_TexTools_CLI</a> - A commandline interface for FFXIV modding <br> <a href="./dsroster.html">dsroster.html</a>  - My first duct taped javascript based app and <br> <a href="https://github.com/fosspill">many other things</a>.</p>
+
+I didn't make this website though, <!-- slightdelayhere-->"CodeNerve" did. Check them out at<!-- longlonglongcomment --><a href="https://github.com/CodeNerve">their github profile</a>.
+
+<p>Free Software, Hell Yeah!</p>
