@@ -12,6 +12,11 @@ padding: 0;
 line-height : 0px;
 }
 
+#menu {
+display: none;
+
+}
+
 @font-face {
     font-family: 'eorzearegular';
     src: url('eorzeaextended-webfont.woff2') format('woff2'),
@@ -47,6 +52,16 @@ line-height : 0px;
 }
 
 
+.checktoggle {
+padding-left: 5px;
+padding-right: 5px;
+color:green;
+}
+
+.toggleinactive {
+ color:red;
+}
+
     
 
 body {
@@ -56,14 +71,36 @@ body {
 
 
 </style>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script> 
 </head>
 <body>
+
+<p id="loading">Loading...</p>
+<p id="menu">
+<span class="checktoggle" id="alltoggle">All</span>
+<span class="checktoggle" id="statictoggle">Static</span>
+<span class="checktoggle" id="tanktoggle">Tank</span>
+<span class="checktoggle" id="healertoggle">Healer</span>
+<span class="checktoggle" id="deepstoggle">DPS</span>
+<span class="checktoggle" id="craftertoggle">Crafter</span>
+<span class="checktoggle" id="gatherertoggle">Gatherer</span>
+</p>
 <p id="head"></p>
 <p id="main"></p>
 
 <script>
 var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
 var staticgrp = [20474470, 20474652, 20542583, 23765972, 24368520, 24368612, 21819678, 22962059];
+
+$(document).ready(function(){
+  $("#alltoggle").click(function(){
+    $(".chardiv").toggle();
+
+  });
+  $("#statictoggle").click(function(){
+    $(".static").toggle();
+  });
+});
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -141,7 +178,8 @@ for (index = 0, len = a.length; index < len; ++index) {
     var endtime = Date.now()
 	await sleep(100 - (endtime - starttime));
 }
-
+document.getElementById("menu").style.display = "block";
+document.getElementById("loading").style.display = "none";
 }
 
 getFc()
