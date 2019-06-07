@@ -68,6 +68,7 @@ width: 49%;
 
 
  body {
-     background-color: linen;
+     background-image: url('../img/sayagata-400px.png');
+     background-repeat: repeat;
 }
  
