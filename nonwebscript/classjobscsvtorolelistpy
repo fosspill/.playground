@@ -1,11 +1,13 @@
 import csv  
-import json  
+import json
+from pathlib import Path
+home = str(Path.home())
 
-csvFilePath = "../ffxiv-datamining/csv/ClassJob.csv"
+csvFilePath = home + "/git/ffxiv-datamining/csv/ClassJob.csv"
 
-tanks = "["
-healers = "["
-dps = "["
+tanks = "var tanks = ["
+healers = "var healers = ["
+dps = "var dps = ["
 
 with open(csvFilePath) as csvFile:
     csvReader = csv.DictReader(csvFile)
@@ -21,7 +23,7 @@ with open(csvFilePath) as csvFile:
         elif classrole == 2:
             healers += str(classid)
             healers += ", "
-        elif classrole == 3:
+        elif classrole in [3,4,5]:
             dps += str(classid)
             dps += ", "
     print (tanks + "]")
