@@ -40,6 +40,10 @@ $(document).ready(function() {
      $("#hiremove").click(function() {
      $(".highlight").removeClass("highlight");
     });
+    
+if (isMobile){
+    $(".checktoggle").addClass("mobilebutton");
+ } 
 });
 
 function sleep(ms) {
