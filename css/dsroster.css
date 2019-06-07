@@ -9,6 +9,10 @@
      display: none;
 }
 
+.mobilebutton{
+width: 50%;
+}
+
  @font-face {
      font-family: 'eorzearegular';
      src: url('../font/eorzeaextended-webfont.woff2') format('woff2'), url('../font/eorzeaextended-webfont.woff') format('woff');
