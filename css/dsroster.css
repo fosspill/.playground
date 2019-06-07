@@ -1,0 +1,68 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+ #main {
+     line-height : 0px;
+}
+ #menu {
+     display: none;
+}
+
+ @font-face {
+     font-family: 'eorzearegular';
+     src: url('../font/eorzeaextended-webfont.woff2') format('woff2'), url('../font/eorzeaextended-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ .chardiv{
+     float: left;
+     position: relative;
+     color: white;
+     text-shadow: 1px 1px 2px black;
+}
+
+
+.charimg{
+    z-index: -2;
+}
+ .top-left{
+     position:absolute;
+     top: 10px;
+     left: 5px;
+}
+ .top-right{
+     position:absolute;
+     top: 10px;
+     right: 5px;
+}
+.bottom-fullwidth{
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    
+}
+
+ .static .top-right {
+     color: green;
+     font-family: 'eorzearegular';
+}
+ .checktoggle {
+     padding-left: 5px;
+     padding-right: 5px;
+     color:green;
+}
+
+.chardivhide {
+    display:none;
+}
+
+ .toggleinactive {
+     color:red;
+}
+ body {
+     background-color: linen;
+}
+ 
