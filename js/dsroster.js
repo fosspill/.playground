@@ -5,7 +5,7 @@ var maxlvl = 70;
 //python3 classjobscsvtorolelistpy
 var tanks = [1, 3, 19, 21, 32 ]
 var healers = [6, 24, 28, 33 ]
-var dps = [2, 4, 20, 22, 34 ]
+var dps = [2, 4, 5, 7, 20, 22, 23, 25, 26, 27, 29, 30, 31, 34, 35, 36 ]
 
 
 
