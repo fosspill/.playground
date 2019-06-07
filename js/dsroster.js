@@ -101,7 +101,7 @@ async function getChars(a) {
                 var arrayLength = jobsarray.length;
                 for (var i = 0; i < arrayLength; i++) {
                     if (jobsarray[i].Level >= maxlvl){
-                                           var classurl = "img/xivjob/" + jobsarray[i].ClassID + ".png";
+                                           var classurl = "img/xivjob/" + jobsarray[i].JobID + ".png";
                     var classpic = document.createElement("img");
                     classpic.setAttribute("width", "10%");
                     classpic.src = classurl;
