@@ -37,6 +37,9 @@ $(document).ready(function() {
      $(".highlight").removeClass("highlight");
     $(".dps").toggleClass("highlight");
     });
+     $("#hiremove").click(function() {
+     $(".highlight").removeClass("highlight");
+    });
 });
 
 function sleep(ms) {
