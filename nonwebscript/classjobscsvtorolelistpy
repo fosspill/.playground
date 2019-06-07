@@ -1,0 +1,29 @@
+import csv  
+import json  
+
+csvFilePath = "../ffxiv-datamining/csv/ClassJob.csv"
+
+tanks = "["
+healers = "["
+dps = "["
+
+with open(csvFilePath) as csvFile:
+    csvReader = csv.DictReader(csvFile)
+    next(csvReader, None)
+    next(csvReader, None)
+    next(csvReader, None)
+    for rows in csvReader:
+        classid = int(rows["\ufeffkey"].replace(" ", ""))
+        classrole = int(rows["43"].replace(" ", ""))
+        if classrole == 1:
+            tanks += str(classid)
+            tanks += ", "
+        elif classrole == 2:
+            healers += str(classid)
+            healers += ", "
+        elif classrole == 3:
+            dps += str(classid)
+            dps += ", "
+    print (tanks + "]")
+    print (healers + "]")
+    print (dps + "]")

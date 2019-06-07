@@ -22,8 +22,12 @@
      text-shadow: 1px 1px 2px black;
 }
 
+.highlight{
+    box-shadow: inset 0px 0px 50px rgba(85, 255, 205, 0.9);
+}
 
 .charimg{
+    position: relative;
     z-index: -2;
 }
  .top-left{
@@ -46,7 +50,7 @@
 }
 
  .static .top-right {
-     color: green;
+     color: lime;
      font-family: 'eorzearegular';
 }
  .checktoggle {

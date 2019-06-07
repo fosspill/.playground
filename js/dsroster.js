@@ -2,6 +2,10 @@ var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
 var staticgrp = [20474470, 20474652, 20542583, 23765972, 24368520, 24368612, 21819678, 22962059];
 var maxlvl = 70;
 
+//python3 classjobscsvtorolelistpy
+var tanks = [1, 3, 19, 21, 32 ]
+var healers = [6, 24, 28, 33 ]
+var dps = [2, 4, 20, 22, 34 ]
 
 
 
@@ -19,6 +23,16 @@ $(document).ready(function() {
     });
     $("#tnames").click(function() {
         $(".top-left").toggle();
+    });
+    $("#hitanks").click(function() {
+    $(".tank").toggleClass("highlight");
+    });
+    $("#hihealers").click(function() {
+    $(".healer").toggleClass("highlight");
+    });
+    
+    $("#hidps").click(function() {
+    $(".dps").toggleClass("highlight");
     });
 });
 
@@ -58,16 +72,7 @@ async function getChars(a) {
                 var divtl = document.createElement("div");
                 var divtr = document.createElement("div");
                 var divbm = document.createElement("div")
-                var classes = "chardiv";
-                if (staticgrp.includes(data["Character"].ID)) {
-                    classes += " static"
-                    divtr.innerHTML = "Static";
-                }
-                else {
-                    classes += " nonstatic"
 
-                }
-                divmain.setAttribute("class", classes);
                 divmain.setAttribute("id", data["Character"].ID);
 
                 divtl.setAttribute("class", "top-left");
@@ -95,22 +100,49 @@ async function getChars(a) {
                 divmain.appendChild(divtl)
                 divmain.appendChild(divtr)
 
+                var classes = []
+                classes.push("chardiv")
+            
                 //divele.appendChild(data["Character"].ID);
                 var jobsobject = data["Character"]["ClassJobs"];
                 var jobsarray = Object.values(jobsobject);
                 var arrayLength = jobsarray.length;
+            
                 for (var i = 0; i < arrayLength; i++) {
                     if (jobsarray[i].Level >= maxlvl){
-                                           var classurl = "img/xivjob/" + jobsarray[i].JobID + ".png";
+                     var classurl = "img/xivjob/" + jobsarray[i].JobID + ".png";
                     var classpic = document.createElement("img");
                     classpic.setAttribute("width", "10%");
                     classpic.src = classurl;
                     divbm.appendChild(classpic); 
+                        
+                    if (tanks.includes(jobsarray[i].JobID) && !classes.includes("tank"))
+                        {
+                            classes.push("tank")
+                        } else if (healers.includes(jobsarray[i].JobID) && !classes.includes("healer"))
+                        {
+                            classes.push("healer")
+                        } else if (dps.includes(jobsarray[i].JobID) && !classes.includes("dps"))
+                        {
+                            classes.push("dps")
+                        }
+                        
+                        
                     }
+                    
                     
 
                     //Do something
                 }
+                if (staticgrp.includes(data["Character"].ID)) {
+                    classes.push("static") 
+                    divtr.innerHTML = "Static";
+                }
+                else {
+                    classes.push("nonstatic") 
+
+                }
+                divmain.setAttribute("class", classes.join(" "));
                 divmain.appendChild(divbm)
                 document.getElementById("main").appendChild(divmain);
                 //console.log(data)
