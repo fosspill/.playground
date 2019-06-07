@@ -25,13 +25,16 @@ $(document).ready(function() {
         $(".top-left").toggle();
     });
     $("#hitanks").click(function() {
+    $(".highlight").removeClass("highlight");
     $(".tank").toggleClass("highlight");
     });
     $("#hihealers").click(function() {
+    $(".highlight").removeClass("highlight");
     $(".healer").toggleClass("highlight");
     });
     
     $("#hidps").click(function() {
+     $(".highlight").removeClass("highlight");
     $(".dps").toggleClass("highlight");
     });
 });
