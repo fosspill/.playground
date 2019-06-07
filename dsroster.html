@@ -1,153 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
+    <head>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/dsroster.js"></script>
+        
+        <link rel="stylesheet" href="css/dsroster.css">
+    </head>
+    <body>
 
-* {
-margin: 0;
-padding: 0;
-}
-    
-#main {
-line-height : 0px;
-}
+        <p id="loading">Loading... (Requires JavaScript Enabled)</p>
+        <p id="menu">
+            <button class="checktoggle" id="tjobs">Toggle Max Jobs</button>
+            <button class="checktoggle" id="tnames">Toggle Names</button>
+            <button class="checktoggle" id="tstatic">Toggle Static</button>
+            <button class="checktoggle" id="trest">Toggle Non-Static</button>
+        </p>
+        <p id="head"></p>
+        <p id="main"></p>
 
-@font-face {
-    font-family: 'eorzearegular';
-    src: url('eorzeaextended-webfont.woff2') format('woff2'),
-         url('eorzeaextended-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+        <script>
+        getFc()
+        </script>
 
-}
-
-.chardiv{
-        float: left;
-	position: relative;
-	color: white;
-	text-shadow: 1px 1px 2px black; 
-    }
-.top-left{
-	position:absolute;
-	top: 10px;
-	left: 5px;
-}
-
-.top-right{
-	position:absolute;
-	top: 10px;
-	right: 5px;
-
-}
-
-
-.static .top-right {
-  color: green; 
-	font-family: 'eorzearegular';
-}
-
-
-    
-
-body {
-  background-color: linen;
-}
-
-
-
-</style>
-</head>
-<body>
-<p id="head"></p>
-<p id="main"></p>
-
-<script>
-var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
-var staticgrp = [20474470, 20474652, 20542583, 23765972, 24368520, 24368612, 21819678, 22962059];
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-async function getFc() {
-fetch("https://xivapi.com/freecompany/9229283011365753108?data=FCM&extended=1")
-	.then(response => {
-		return response.json()
-	})
-	.then(data => {
-		document.getElementById("head").innerHTML += "<h1>" + data["FreeCompany"].Name + "</h1>";
-		var memArray = data["FreeCompanyMembers"];
-		getChars(memArray);
-	})
-	.catch(err => {
-			    document.getElementById("main").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU <3!";
-			    document.getElementById("main").innerHTML += err;
-})
-
-}
-
-async function getChars(a){
-
-var index, len;
-for (index = 0, len = a.length; index < len; ++index) {
-            var starttime = Date.now()
-			fetch('https://xivapi.com/character/' + a[index].ID)
-			  .then(response => {
-			    return response.json()
-			  })
-			  .then(data => {
-                var divmain = document.createElement("div");
-                var divtl = document.createElement("div");
-		var divtr = document.createElement("div");
-                var classes = "chardiv";
-		if (staticgrp.includes(data["Character"].ID)){
-			classes += " static"
-                        divtr.innerHTML = "Static";
-		}
-                divmain.setAttribute("class", classes);
-                divmain.setAttribute("id", data["Character"].ID);
-                
-                divtl.setAttribute("class", "top-left");
-                divtl.innerHTML = data["Character"].Name;
-
-                divtr.setAttribute("class", "top-right");
-
-                
-			    var pic = document.createElement("img");
-			    pic.src = data["Character"].Portrait;
-
-			    if (isMobile) {
-				pic.setAttribute("width", screen.width);
-                    divmain.setAttribute("width", screen.width);
-			    } else {
-			    pic.setAttribute("width", "321");
-                    divmain.setAttribute("width", "321");
-			    }
-			    pic.setAttribute("title", data["Character"].Name);
-			    pic.setAttribute("alt", data["Character"].Name);
-		        pic.setAttribute("class", "charimg");
-		        divmain.appendChild(pic)
-		        divmain.appendChild(divtl)
-		        divmain.appendChild(divtr)
-		        document.getElementById("main").appendChild(divmain);
-			    //divele.appendChild(data["Character"].ID);
-			    console.log(data)
-			    
-			  })
-			  .catch(err => {
-			    document.getElementById("main").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU <3!";
-			    document.getElementById("main").innerHTML += err;
-			  }) 
-    var endtime = Date.now()
-	await sleep(100 - (endtime - starttime));
-}
-
-}
-
-getFc()
-
-
-</script>
-
-</body>
+    </body>
 </html>
