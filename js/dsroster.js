@@ -1,11 +1,11 @@
 var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
 var staticgrp = [20474470, 20474652, 20542583, 23765972, 24368520, 24368612, 21819678, 22962059];
-var maxlvl = 70;
+var maxlvl = 80;
 
 //python3 classjobscsvtorolelistpy
-var tanks = [1, 3, 19, 21, 32 ]
+var tanks = [1, 3, 19, 21, 32, 37 ]
 var healers = [6, 24, 28, 33 ]
-var dps = [2, 4, 5, 7, 20, 22, 23, 25, 26, 27, 29, 30, 31, 34, 35, 36 ]
+var dps = [2, 4, 5, 7, 20, 22, 23, 25, 26, 27, 29, 30, 31, 34, 35, 36, 38 ]
 
 
 
