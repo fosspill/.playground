@@ -31,6 +31,9 @@
 #title {
      font-family: 'warsaw_gothiccondensed';
      font-size: 40px;
+letter-spacing: 4px;
+margin-top: 0px;
+margin-bottom: 5px;
 }
 
 #content {
