@@ -30,10 +30,11 @@
 
 #title {
      font-family: 'warsaw_gothiccondensed';
+     font-size: 40px;
 }
 
 #content {
-  padding: 20px 20px 20px 20px;
+  padding: 0px 20px 20px 20px;
   width: 50%;
   margin: 0 auto;
   border: 2px solid black;
