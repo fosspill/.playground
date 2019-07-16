@@ -12,6 +12,10 @@
 
 
  <table>
+<tr id="res">
+<td id="restext">
+</td>
+</tr>
   <tr>
     <td>Select Fight</td>
     <td> <select id="selfight">
@@ -20,9 +24,33 @@
   </tr>
   <tr>
     <td>Select Class</td>
-    <td> <select disabled id="selclass">
+    <td> <select id="selclass" disabled>
 </select> </td>
   </tr>
+<tr class="fightcalc">
+<td>
+Remaining time
+</td>
+<td>
+<input id="remainingtime" class="textinput" type="number" value="0" />s
+</td>
+</tr>
+<tr class="fightcalc">
+<td>
+Remaining HP
+</td>
+<td>
+<input id="hppercent" class="textinput" type="number" value="0" />%
+</td>
+</tr>
+<tr class="fightcalc">
+<td>
+<input id="reset" type="button" value="Reset" />
+</td>
+<td>
+<input id="calculate" type="button" value="Calculate" />
+</td>
+</tr>
 </table> 
 
 
