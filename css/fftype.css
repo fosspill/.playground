@@ -8,6 +8,10 @@
 }
 
 
+ body {
+     background-image: url('../img/sayagata-400px.png');
+     background-repeat: repeat;
+}
 
 #title {
      font-family: 'warsaw_gothiccondensed';
@@ -20,7 +24,7 @@ margin-bottom: 5px;
 #content {
   padding: 0px 20px 20px 20px;
   width: 20%;
-  min-width: 300px;
+  min-width: 350px;
   margin: 0 auto;
   border: 2px solid black;
   border-radius: 10px;
