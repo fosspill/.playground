@@ -1,0 +1,58 @@
+
+
+ @font-face {
+     font-family: 'eorzearegular';
+     src: url('../font/eorzeaextended-webfont.woff2') format('woff2'), url('../font/eorzeaextended-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+@font-face {
+    font-family: 'warsaw_gothiccondensed';
+    src: url('../font/warsawgothiccond-webfont.woff2') format('woff2'),
+         url('../font/warsawgothiccond-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'warsaw_gothiccondobl';
+    src: url('../font/warsawgothiccondobl-webfont.woff2') format('woff2'),
+         url('../font/warsawgothiccondobl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#title {
+     font-family: 'warsaw_gothiccondensed';
+     font-size: 40px;
+letter-spacing: 4px;
+margin-top: 0px;
+margin-bottom: 5px;
+}
+
+#content {
+  padding: 0px 20px 20px 20px;
+  width: 40%;
+  min-width: 400px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: rgb(255,255,255);
+  background-image: url("../img/sssbg.png");
+background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.0) , rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0)), url("../img/sssbg.png");
+}
+
+.fightcalc {
+display: none;
+}
+
+#res {
+display: none;
+}
+
