@@ -13,12 +13,6 @@
 width: 49%;
 }
 
- @font-face {
-     font-family: 'eorzearegular';
-     src: url('../font/eorzeaextended-webfont.woff2') format('woff2'), url('../font/eorzeaextended-webfont.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
-}
  .chardiv{
      float: left;
      position: relative;
@@ -64,11 +58,5 @@ width: 49%;
 
 .chardivhide {
     display:none;
-}
-
-
- body {
-     background-image: url('../img/sayagata-400px.png');
-     background-repeat: repeat;
 }
  
