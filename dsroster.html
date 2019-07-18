@@ -3,17 +3,25 @@
     <head>
         <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="js/dsroster.js"></script>
+        <script type="text/javascript" src="js/ffmenu.js"></script>
         
+        <link rel="stylesheet" href="css/ffmenu.css">
         <link rel="stylesheet" href="css/dsroster.css">
     </head>
     <body>
-
+<div id="ffmenu">
+</div>
         <p id="loading">Loading... (Requires JavaScript Enabled)</p>
         <p id="menu">
             <button class="checktoggle" id="tjobs">Toggle Max Jobs</button>
             <button class="checktoggle" id="tnames">Toggle Names</button>
             <button class="checktoggle" id="tstatic">Toggle Static</button>
             <button class="checktoggle" id="trest">Toggle Non-Static</button>
+            <button class="checktoggle" id="hihealers">Highlight Healers</button>
+            <button class="checktoggle" id="hitanks">Highlight Tanks</button>
+            <button class="checktoggle" id="hidps">Hightlight DPS</button>
+            <button class="checktoggle" id="hiremove">Reset Highlight</button>
+            <input type="text" id="search">
         </p>
         <p id="head"></p>
         <p id="main"></p>
