@@ -7,7 +7,7 @@
     font-family: monospace; 
     font-size: 12px;
     font-weight: bold;
-    background:url(/img/ffbuttoninactive.png) no-repeat;
+    background:url(../img/ffbuttoninactive.png) no-repeat;
     cursor:pointer;
     border:none;
     width:115px;
@@ -21,6 +21,6 @@ padding-top:3px;
 
 .ffbtn:hover  
 {   
-    background:url(/img/ffbuttonactive.png) no-repeat;
+    background:url(../img/ffbuttonactive.png) no-repeat;
     z-index: 1000;
 }
