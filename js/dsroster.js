@@ -1,5 +1,5 @@
 var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
-var staticgrp = [20474470, 23765972, 24368520, 24368612, 21819678, 25173963, 20542583];
+var staticgrp = [20474470, 23765972, 24368520, 24368612, 21819678, 25173963, 20542583, 24364510];
 var maxlvl = 80;
 
 //python3 classjobscsvtorolelistpy
