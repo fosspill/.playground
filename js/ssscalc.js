@@ -1,5 +1,5 @@
 var sssfight = {
-"Story Boss": {
+"ShB: Story Boss": {
 "AST":861360,
 "BLM":1963960,
 
@@ -18,7 +18,7 @@ var sssfight = {
 
 "WHM":1157360
 },
-"Eden NM": {
+"ShB: Eden NM": {
 "AST":890360,
 "BLM":2033520,
 
@@ -37,7 +37,7 @@ var sssfight = {
 
 "WHM":1197320,
 },
-"Titania EX": {
+"ShB: Titania EX": {
 "AST":923520,
 "BLM":2106040,
 "BRD":1691640,
@@ -56,7 +56,7 @@ var sssfight = {
 "WAR":1142560,
 "WHM":1240240,
 },
-"Innocence EX": {
+"ShB: Innocence EX": {
 "AST":923520,
 "BLM":2106040,
 "BRD":1691640,
@@ -75,7 +75,7 @@ var sssfight = {
 "WAR":1142560,
 "WHM":1240240,
 },
-"E1S": {
+"ShB: E1S": {
 "AST":1016760,
 "BLM":2316200,
 
@@ -94,7 +94,7 @@ var sssfight = {
 
 "WHM":1364560,
 },
-"E2S": {
+"ShB: E2S": {
 "AST":1047840,
 "BLM":2388720,
 
@@ -113,7 +113,7 @@ var sssfight = {
 
 "WHM":1407480,
 },
-"E3S": {
+"ShB: E3S": {
 "AST":1080400,
 "BLM":2462720,
 
@@ -132,7 +132,7 @@ var sssfight = {
 
 "WHM":1450400,
 },
-"E4S": {
+"ShB: E4S": {
 "AST":1147000,
 "BLM":2616640,
 
