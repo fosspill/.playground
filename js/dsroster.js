@@ -7,10 +7,17 @@ var tanks = [1, 3, 19, 21, 32, 37 ]
 var healers = [6, 24, 28, 33 ]
 var dps = [2, 4, 5, 7, 20, 22, 23, 25, 26, 27, 29, 30, 31, 34, 35, 36, 38 ]
 
+Array.prototype.keySort = function(key, desc){
+  this.sort(function(a, b) {
+    var result = desc ? (a[key] < b[key]) : (a[key] > b[key]);
+    return result ? 1 : -1;
+  });
+  return this;
+}
 
 
 $(document).ready(function() {
-    
+
 
   $('#search').on('input', function() {
     $('.chardiv').each(function(i, obj) {
@@ -74,7 +81,7 @@ async function getFc() {
             getChars(memArray);
         })
         .catch(err => {
-            document.getElementById("menu").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU <3!<br>";
+            document.getElementById("menu").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU (AFTER REFRESHING ONCE) <3!<br>";
             document.getElementById("menu").innerHTML += err;
         })
 
@@ -128,14 +135,15 @@ async function getChars(a) {
             
                 //divele.appendChild(data["Character"].ID);
                 var jobsobject = data["Character"]["ClassJobs"];
-                var jobsarray = Object.values(jobsobject);
+                var jobsarray = Object.values(jobsobject).keySort('Level', true);
                 var arrayLength = jobsarray.length;
-            
+
                 for (var i = 0; i < arrayLength; i++) {
                     if (jobsarray[i].Level >= maxlvl){
                      var classurl = "img/xivjob/" + jobsarray[i].JobID + ".png";
                     var classpic = document.createElement("img");
                     classpic.setAttribute("width", "10%");
+		    classpic.setAttribute("title", jobsarray[i].Level);
                     classpic.src = classurl;
                     divbm.appendChild(classpic); 
                         
@@ -151,8 +159,18 @@ async function getChars(a) {
                         }
                         
                         
+                    } else if (jobsarray[i].Level >= 10) {
+                    var classurl = "img/xivjob/" + jobsarray[i].JobID + ".png";
+                    var classpic = document.createElement("img");
+                    classpic.setAttribute("width", "10%");
+		    classpic.setAttribute("title", jobsarray[i].Level);
+                    var classpicopacity = (jobsarray[i].Level / (maxlvl-1)) * 0.8;
+                    var classpicgrayscale = Math.ceil(50 + (50 * (1 - classpicopacity)));
+		    classpic.style.opacity = classpicopacity;
+                    classpic.style["filter"] = "grayscale(" + classpicgrayscale + "%)";
+                    classpic.src = classurl;
+                    divbm.appendChild(classpic); 
                     }
-                    
                     
 
                     //Do something
@@ -172,7 +190,7 @@ async function getChars(a) {
 
             })
             .catch(err => {
-                document.getElementById("menu").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU <3!<br>";
+                document.getElementById("menu").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU (AFTER REFRESHING ONCE) <3!<br>";
                 document.getElementById("menu").innerHTML += err;
             })
         var endtime = Date.now()
