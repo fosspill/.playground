@@ -71,14 +71,19 @@ function sleep(ms) {
 }
 
 async function getFc() {
-    fetch("https://xivapi.com/freecompany/9229283011365753108?data=FCM&extended=1")
+    fetch("https://staging.xivapi.com/freecompany/9229283011365753108?data=FCM&extended=1")
         .then(response => {
             return response.json()
         })
         .then(data => {
             document.getElementById("head").innerHTML += "<h1>" + data["FreeCompany"].Name + "</h1>";
             var memArray = data["FreeCompanyMembers"];
+            if (memArray.length > 0){
             getChars(memArray);
+	    } else {
+	    document.getElementById("main").innerHTML = "<img src='img/angrymoogle.png' /><div style='padding-top: 1em;'>GREAT GOOGLY MOOGLEY IT'S ALL GONE TO SHIT!</div><div style='padding-top: 1em;'>The Lodestone or XIVAPI is not responding as expected. Likely due to maintenance or unexpected downtime.Try again later.</div>";
+	    }
+
         })
         .catch(err => {
             document.getElementById("menu").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU (AFTER REFRESHING ONCE) <3!<br>";
@@ -92,7 +97,7 @@ async function getChars(a) {
     var index, len;
     for (index = 0, len = a.length; index < len; ++index) {
         var starttime = Date.now()
-        fetch('https://xivapi.com/character/' + a[index].ID)
+        fetch('https://staging.xivapi.com/character/' + a[index].ID)
             .then(response => {
                 return response.json()
             })
