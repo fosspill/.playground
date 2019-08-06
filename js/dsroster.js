@@ -66,6 +66,7 @@ if (isMobile){
  } 
 });
 
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -103,7 +104,7 @@ async function getChars(a) {
     var index, len;
     for (index = 0, len = a.length; index < len; ++index) {
         var starttime = Date.now()
-        fetch('https://staging.xivapi.com/character/' + a[index].ID)
+        fetch('https://xivapi.com/character/' + a[index].ID)
             .then(response => {
                 return response.json()
             })
@@ -204,8 +205,15 @@ async function getChars(a) {
                 errorout(err);
             })
         var endtime = Date.now()
-        await sleep(100 - (endtime - starttime));
+        await sleep(400 - (endtime - starttime));
     }
-    document.getElementById("menu").style.display = "block";
+
+
+
+      document.getElementById("menu").style.display = "block";
+document.getElementById("main").style.display = "block";
     document.getElementById("loading").style.display = "none";
+document.getElementById("loadinggif").style.display = "none";
 }
+
+

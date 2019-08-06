@@ -4,6 +4,7 @@
 }
  #main {
      line-height : 0px;
+     display: none;
 }
  #menu {
      display: none;
