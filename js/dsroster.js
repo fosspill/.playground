@@ -70,8 +70,15 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function errorout(error){
+	 document.getElementById("main").innerHTML = "<img src='img/angrymoogle.png' /><div style='padding-top: 1em;'>GREAT GOOGLY MOOGLEY IT'S ALL GONE TO SHIT!</div><div style='padding-top: 1em;'>The Lodestone or XIVAPI is not responding as expected. Likely due to maintenance or unexpected downtime.Try again later. </div>";
+	 document.getElementById("main").innerHTML += "<div style='padding-top: 1em;'>" + error + "</div>";
+         document.getElementById("menu").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU (AFTER REFRESHING ONCE) <3!<br>";
+         document.getElementById("menu").innerHTML += error;
+}
+
 async function getFc() {
-    fetch("https://staging.xivapi.com/freecompany/9229283011365753108?data=FCM&extended=1")
+    fetch("https://xivapi.com/freecompany/9229283011365753108?data=FCM&extended=1")
         .then(response => {
             return response.json()
         })
@@ -81,13 +88,12 @@ async function getFc() {
             if (memArray.length > 0){
             getChars(memArray);
 	    } else {
-	    document.getElementById("main").innerHTML = "<img src='img/angrymoogle.png' /><div style='padding-top: 1em;'>GREAT GOOGLY MOOGLEY IT'S ALL GONE TO SHIT!</div><div style='padding-top: 1em;'>The Lodestone or XIVAPI is not responding as expected. Likely due to maintenance or unexpected downtime.Try again later.</div>";
+	   	errorout("Membersarray is empty.")
 	    }
 
         })
         .catch(err => {
-            document.getElementById("menu").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU (AFTER REFRESHING ONCE) <3!<br>";
-            document.getElementById("menu").innerHTML += err;
+            errorout(err);
         })
 
 }
@@ -195,8 +201,7 @@ async function getChars(a) {
 
             })
             .catch(err => {
-                document.getElementById("menu").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU (AFTER REFRESHING ONCE) <3!<br>";
-                document.getElementById("menu").innerHTML += err;
+                errorout(err);
             })
         var endtime = Date.now()
         await sleep(100 - (endtime - starttime));
