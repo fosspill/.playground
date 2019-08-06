@@ -7,11 +7,14 @@ var tanks = [1, 3, 19, 21, 32, 37 ]
 var healers = [6, 24, 28, 33 ]
 var dps = [2, 4, 5, 7, 20, 22, 23, 25, 26, 27, 29, 30, 31, 34, 35, 36, 38 ]
 
-    function keysrt(key,desc) {
-  return function(a,b){
-   return desc ? ~~(a[key] < b[key]) : ~~(a[key] > b[key]);
-  }
+Array.prototype.keySort = function(key, desc){
+  this.sort(function(a, b) {
+    var result = desc ? (a[key] < b[key]) : (a[key] > b[key]);
+    return result ? 1 : -1;
+  });
+  return this;
 }
+
 
 $(document).ready(function() {
 
@@ -132,8 +135,9 @@ async function getChars(a) {
             
                 //divele.appendChild(data["Character"].ID);
                 var jobsobject = data["Character"]["ClassJobs"];
-                var jobsarray = Object.values(jobsobject).sort(keysrt('Level', true));
+                var jobsarray = Object.values(jobsobject).keySort('Level', true);
                 var arrayLength = jobsarray.length;
+                console.log(jobsarray.keySort('Level', true));
 
                 for (var i = 0; i < arrayLength; i++) {
                     if (jobsarray[i].Level >= maxlvl){
