@@ -205,7 +205,7 @@ async function getChars(a) {
                 errorout(err);
             })
         var endtime = Date.now()
-        await sleep(400 - (endtime - starttime));
+        await sleep(400);
     }
 
 
