@@ -7,10 +7,14 @@ var tanks = [1, 3, 19, 21, 32, 37 ]
 var healers = [6, 24, 28, 33 ]
 var dps = [2, 4, 5, 7, 20, 22, 23, 25, 26, 27, 29, 30, 31, 34, 35, 36, 38 ]
 
-
+    function keysrt(key,desc) {
+  return function(a,b){
+   return desc ? ~~(a[key] < b[key]) : ~~(a[key] > b[key]);
+  }
+}
 
 $(document).ready(function() {
-    
+
 
   $('#search').on('input', function() {
     $('.chardiv').each(function(i, obj) {
@@ -128,9 +132,9 @@ async function getChars(a) {
             
                 //divele.appendChild(data["Character"].ID);
                 var jobsobject = data["Character"]["ClassJobs"];
-                var jobsarray = Object.values(jobsobject);
+                var jobsarray = Object.values(jobsobject).sort(keysrt('Level', true));
                 var arrayLength = jobsarray.length;
-            
+
                 for (var i = 0; i < arrayLength; i++) {
                     if (jobsarray[i].Level >= maxlvl){
                      var classurl = "img/xivjob/" + jobsarray[i].JobID + ".png";
@@ -152,13 +156,16 @@ async function getChars(a) {
                         }
                         
                         
-                    } else if (jobsarray[i].Level > 0) {
+                    } else if (jobsarray[i].Level >= 10) {
                     var classurl = "img/xivjob/" + jobsarray[i].JobID + ".png";
                     var classpic = document.createElement("img");
                     classpic.setAttribute("width", "10%");
 		    classpic.setAttribute("title", jobsarray[i].Level);
-                    var classpicopacity = 
-		    classpic.style.opacity = .5;
+                    var classpicopacity = (jobsarray[i].Level / (maxlvl-1)) * 0.8;
+                    var classpicgrayscale = 100-(classpicopacity*100);
+                    console.log(classpicgrayscale);
+		    classpic.style.opacity = classpicopacity;
+                    classpic.style["filter"] = "grayscale(" + classpicgrayscale + "%)";
                     classpic.src = classurl;
                     divbm.appendChild(classpic); 
                     }
