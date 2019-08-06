@@ -137,7 +137,6 @@ async function getChars(a) {
                 var jobsobject = data["Character"]["ClassJobs"];
                 var jobsarray = Object.values(jobsobject).keySort('Level', true);
                 var arrayLength = jobsarray.length;
-                console.log(jobsarray.keySort('Level', true));
 
                 for (var i = 0; i < arrayLength; i++) {
                     if (jobsarray[i].Level >= maxlvl){
@@ -166,8 +165,7 @@ async function getChars(a) {
                     classpic.setAttribute("width", "10%");
 		    classpic.setAttribute("title", jobsarray[i].Level);
                     var classpicopacity = (jobsarray[i].Level / (maxlvl-1)) * 0.8;
-                    var classpicgrayscale = 100-(classpicopacity*100);
-                    console.log(classpicgrayscale);
+                    var classpicgrayscale = Math.ceil(50 + (50 * (1 - classpicopacity)));
 		    classpic.style.opacity = classpicopacity;
                     classpic.style["filter"] = "grayscale(" + classpicgrayscale + "%)";
                     classpic.src = classurl;
