@@ -74,7 +74,7 @@ async function getFc() {
             getChars(memArray);
         })
         .catch(err => {
-            document.getElementById("menu").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU <3!<br>";
+            document.getElementById("menu").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU (AFTER REFRESHING ONCE) <3!<br>";
             document.getElementById("menu").innerHTML += err;
         })
 
@@ -136,6 +136,7 @@ async function getChars(a) {
                      var classurl = "img/xivjob/" + jobsarray[i].JobID + ".png";
                     var classpic = document.createElement("img");
                     classpic.setAttribute("width", "10%");
+		    classpic.setAttribute("title", jobsarray[i].Level);
                     classpic.src = classurl;
                     divbm.appendChild(classpic); 
                         
@@ -151,8 +152,16 @@ async function getChars(a) {
                         }
                         
                         
+                    } else if (jobsarray[i].Level > 0) {
+                    var classurl = "img/xivjob/" + jobsarray[i].JobID + ".png";
+                    var classpic = document.createElement("img");
+                    classpic.setAttribute("width", "10%");
+		    classpic.setAttribute("title", jobsarray[i].Level);
+                    var classpicopacity = 
+		    classpic.style.opacity = .5;
+                    classpic.src = classurl;
+                    divbm.appendChild(classpic); 
                     }
-                    
                     
 
                     //Do something
@@ -172,7 +181,7 @@ async function getChars(a) {
 
             })
             .catch(err => {
-                document.getElementById("menu").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU <3!<br>";
+                document.getElementById("menu").innerHTML = "SOMETHING WENT WRONG. YELL AT ISU (AFTER REFRESHING ONCE) <3!<br>";
                 document.getElementById("menu").innerHTML += err;
             })
         var endtime = Date.now()
