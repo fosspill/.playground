@@ -3,7 +3,7 @@ var now = new Date();
 var date = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
 var resultDate = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
 
-    resultDate.setUTCDate(date.getUTCDate() + (7 + dayOfWeek - date.getUTCDay()) % 7);
+    resultDate.setUTCDate(date.getUTCDate() + (7 + dayOfWeek - date.getUTCDay()));
     resultDate.setUTCHours(17, 00, 00, 00)
     console.log(resultDate);
     return resultDate;
@@ -12,7 +12,7 @@ var resultDate = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDat
 function timerTo(elementid, cddate) {
 var countDownDate = cddate.getTime();
 
-var x = setInterval(function() {
+setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -25,9 +25,7 @@ var x = setInterval(function() {
    
   // If the count down is finished, write some text
   if (distance < 0) {
-    console.log(distance);
-    console.log(now);
-    console.log(countDownDate);
+     document.getElementById(elementid).innerHTML = "Ongoing or Ended";
   }
 }, 1000);
 }
