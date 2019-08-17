@@ -48,3 +48,44 @@ margin-bottom: 5px;
   background-image: url("../img/sssbg.png");
 background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.0) , rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0)), url("../img/sssbg.png");
 }
+
+@media only screen and (max-width: 900px) {
+.ffbtn{
+background-color: #dbebfb;
+margin: 0.1em 0.1em 0.1em 0.1em;
+padding: 1px 1px 1px 1px;
+font-size: 3em;
+border-radius: 10px;
+border-width: 1px;
+border-color: black;
+border-style: solid;
+}
+.ffbtn:hover  
+{   
+    background-color: #f3dbfb;
+    z-index: 1000;
+}
+}
+@media screen and (min-width: 900px) {
+.ffbtn{
+     color: initial;
+    color: white;
+    font-size: 12px;
+    margin-left: -5px;
+    margin-right: -5px;
+    background:url(../img/ffbuttoninactive.png) no-repeat;
+    cursor:pointer;
+    border:none;
+    width:115px;
+    height:21px;
+padding-top:3px;
+
+}
+
+.ffbtn:hover  
+{   
+    background:url(../img/ffbuttonactive.png) no-repeat;
+    z-index: 1000;
+}
+}
+
