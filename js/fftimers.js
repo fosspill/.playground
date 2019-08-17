@@ -5,7 +5,7 @@ var resultDate = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDat
 
     resultDate.setUTCDate(date.getUTCDate() + (7 + dayOfWeek - date.getUTCDay()) % 7);
     resultDate.setUTCHours(17, 00, 00, 00)
-
+    console.log(resultDate);
     return resultDate;
 }
 
@@ -22,11 +22,12 @@ var x = setInterval(function() {
 
   document.getElementById(elementid).innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
-
+   
   // If the count down is finished, write some text
   if (distance < 0) {
-    clearInterval(x);
-    document.getElementById(elementid).innerHTML = "Ongoing or Ended.";
+    console.log(distance);
+    console.log(now);
+    console.log(countDownDate);
   }
 }, 1000);
 }
