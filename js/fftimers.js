@@ -22,8 +22,7 @@ setInterval(function() {
 
   document.getElementById(elementid).innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
-   
-  // If the count down is finished, write some text
+  
   if (distance < 0) {
      document.getElementById(elementid).innerHTML = "Ongoing or Ended";
   }
@@ -31,16 +30,16 @@ setInterval(function() {
 }
 
 $(document).ready(function() {
-    
+//Static timer. Finds next friday and counts down.  
 timerTo("statictimer", getNextDayOfWeek(5));
 
-var now = new Date();
-var weddingdate = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
-
-weddingdate.setUTCMonth(7);
-weddingdate.setUTCDate(17);
-weddingdate.setUTCHours(17, 00, 00, 00);
-timerTo("weddingtimer", weddingdate);
+//Custom timer example
+//var now = new Date();
+//var weddingdate = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
+//weddingdate.setUTCMonth(7);
+//weddingdate.setUTCDate(17);
+//weddingdate.setUTCHours(17, 00, 00, 00);
+//timerTo("weddingtimer", weddingdate);
 
 
 
