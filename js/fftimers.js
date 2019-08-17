@@ -12,7 +12,7 @@ var resultDate = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDat
 function timerTo(elementid, cddate, title) {
     var countDownDate = cddate.getTime();
     var divtimer = document.createElement("div");
-    var spantimer = document.createElement("div");
+    var spantimer = document.createElement("span");
     divtimer.innerHTML = title + "<br>";
     spantimer.setAttribute("id", elementid);
     divtimer.appendChild(spantimer);
@@ -37,7 +37,7 @@ function timerTo(elementid, cddate, title) {
 
 $(document).ready(function() {
 //Static timer. Finds next friday and counts down.  
-timerTo("statictimer", getNextDayOfWeek(5));
+timerTo("statictimer", getNextDayOfWeek(5), "Static");
 
 //Custom timer example
 //var now = new Date();
