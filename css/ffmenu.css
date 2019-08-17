@@ -11,13 +11,13 @@ text-align: center;
 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 760px) {
 .ffbtn{
 background-color: #dbebfb;
 margin: 0.1em 0.1em 0.1em 0.1em;
 padding: 1px 1px 1px 1px;
-font-size: 3em;
-width: 100%;
+font-size: 2em;
+width: 99%;
 border-radius: 10px;
 border-width: 1px;
 border-color: black;
@@ -29,7 +29,7 @@ border-style: solid;
     z-index: 1000;
 }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 760px) {
 .ffbtn{
      color: initial;
     color: white;

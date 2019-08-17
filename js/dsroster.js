@@ -61,9 +61,7 @@ $(document).ready(function() {
      $(".highlight").removeClass("highlight");
     });
     
-if (isMobile){
-    $(".checktoggle").addClass("mobilebutton");
- } 
+
 });
 
 
@@ -128,13 +126,7 @@ async function getChars(a) {
                 var pic = document.createElement("img");
                 pic.src = data["Character"].Portrait;
 
-                if (isMobile) {
-                    pic.setAttribute("width", screen.width);
-                    divmain.setAttribute("width", screen.width);
-                } else {
-                    pic.setAttribute("width", "321");
-                    divmain.setAttribute("width", "321");
-                }
+
                 pic.setAttribute("title", data["Character"].Name);
                 pic.setAttribute("alt", data["Character"].Name);
                 pic.setAttribute("class", "charimg");
