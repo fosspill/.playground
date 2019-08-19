@@ -3,7 +3,7 @@ var now = new Date();
 var date = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
 var resultDate = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
 
-    resultDate.setUTCDate(date.getUTCDate() + (7 + dayOfWeek - date.getUTCDay()));
+    resultDate.setUTCDate(date.getUTCDate() + ((7 + dayOfWeek - date.getUTCDay()) % 7));
     resultDate.setUTCHours(17, 00, 00, 00)
     console.log(resultDate);
     return resultDate;
