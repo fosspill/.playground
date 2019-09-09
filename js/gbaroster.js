@@ -76,7 +76,7 @@ function errorout(error){
 }
 
 async function getFc() {
-    fetch("https://xivapi.com/freecompany/9229283011365753108?data=FCM&extended=1")
+    fetch("https://xivapi.com/freecompany/9229283011365791634?data=FCM&extended=1")
         .then(response => {
             return response.json()
         })
