@@ -1,15 +1,13 @@
 baseURL = "./"
-title = "Monopriv"
+title = "./"
 languagecode = "en"
-author = "Steve Francia"
-copyright = "Copyright © 2008–2019"
+author = "Ole Erik Brennhagen"
+copyright = "Copyright © 2019 | Content MIT licensed"
 paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
-googleAnalytics = "UA-123-45"
-disqusShortname = "yourdiscussshortname"
 theme = "monopriv"
 
 [params]
