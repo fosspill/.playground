@@ -1,0 +1,26 @@
+#ffangleriframe{
+height: 1133.5px;
+}
+
+#ffanglermobileiframe{
+height: 522.4px;
+}
+@media only screen and (max-width: 1040px) {
+#ffangleriframe{
+display: none;
+}
+#ffanglermobileiframe{
+display: block;
+}
+}
+
+
+@media screen and (min-width: 1040px) {
+#ffangleriframe{
+display: block;
+}
+#ffanglermobileiframe{
+display: none;
+}
+
+}

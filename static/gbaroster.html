@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GBA FC Roster</title>
+<meta name='viewport' content="width=device-width, initial-scale=1" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/gbaroster.js"></script>
+        <script type="text/javascript" src="js/ffmenu.js"></script>
+        <link rel="stylesheet" href="css/ffcommon.css">
+        <link rel="stylesheet" href="css/ffmenu.css">
+        <link rel="stylesheet" href="css/rostercommon.css">
+    </head>
+    <body>
+<div id="ffmenu">
+</div>
+        <img class="loadingclass" id="loadinggif" src="img/loadingmoogle.gif" /><p class="loadingclass" id="loading">Loading... (Requires JavaScript Enabled)</p>
+        <p id="menu">
+            <button class="checktoggle" id="tjobs">Toggle Jobs</button>
+            <button class="checktoggle" id="tnames">Toggle Names</button>
+            <button class="checktoggle" id="tstatic">Toggle Static</button>
+            <button class="checktoggle" id="trest">Toggle Non-Static</button>
+            <button class="checktoggle" id="hihealers">Highlight Healers</button>
+            <button class="checktoggle" id="hitanks">Highlight Tanks</button>
+            <button class="checktoggle" id="hidps">Hightlight DPS</button>
+            <button class="checktoggle" id="hiremove">Reset Highlight</button>
+            <input type="text" id="search">
+        </p>
+        <p id="head"></p>
+        <p id="main"></p>
+
+        <script>
+        getFc()
+        </script>
+
+    </body>
+</html>
