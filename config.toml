@@ -15,6 +15,7 @@ about = "A privacy focused minimal bootstrap theme"
 github = "https://github.com"
 gitlab = "https://gitlab.com"
 email = "mail@example.com"
+pubkey = "publickey.web@elo.anonaddy.com.asc"
 # site meta description
 metadesc = "A simple privacy oriented bootstrap hugo blog"
 # site meta keywords
