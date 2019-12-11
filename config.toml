@@ -2,7 +2,7 @@ baseURL = "/"
 title = "./"
 languagecode = "en"
 author = "Ole Erik Brennhagen"
-copyright = "Copyright © 2019 | Content MIT licensed"
+copyright = "Copyright © 2019"
 paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -11,15 +11,16 @@ footnoteReturnLinkContents = "^"
 theme = "monopriv"
 
 [params]
-about = "A privacy focused minimal bootstrap theme"
-github = "https://github.com"
-gitlab = "https://gitlab.com"
-email = "mail@example.com"
+about = "Developer, OpenSource Lover, SF Flow Maniac, SysAdmin"
+github = "https://github.com/fosspill"
+linkedin = "https://www.linkedin.com/in/ole-erik-brennhagen-551436b0/"
+trailhead= "https://trailblazer.me/id/obrennhagen"
+email = "web@elo.anonaddy.com"
 pubkey = "publickey.web@elo.anonaddy.com.asc"
 # site meta description
-metadesc = "A simple privacy oriented bootstrap hugo blog"
+metadesc = "Ramblings and documentation from a Tech mind regarding Salesforce, Service Cloud, Linux and almost anything else."
 # site meta keywords
-metakeys = "hugo, simple, minimal, bootstrap, blog"
+metakeys = "linux, salesforce, apex, sysadmin, salesforce administrator, blog, cv"
 # enable/disable disqus comments 
 disqus = false 
 # enable/disable google analytics 
