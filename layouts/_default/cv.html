@@ -6,7 +6,10 @@
 	  <h5 class="extra-spacing text-center">{{ .Params.Subtitle }}</h5>
 	  
 	  <div id="cvheader">
-	  <img id="cvpic" class="roundedpic" src="{{ "img/pic1.png" | absURL }}">
+		  <span id="cvpicspan">
+	  <img width="128px" height="128px" id="cvpic" class="roundedpic" src="{{ "img/pic1.png" | absURL }}">
+	  <img width="128px" height="128px" id="cvpic2" class="roundedpic" src="{{ "img/pic2.png" | absURL }}">
+	</span>
   <span>{{ .Description }}</span>	
 </div>
 	    <div id="cvcontent">{{ .Content }}</div>

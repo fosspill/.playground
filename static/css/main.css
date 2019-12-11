@@ -31,16 +31,18 @@ a.no-style , a.no-style:visited, a.no-style:focus, a.no-style:hover, a.no-style:
 }
 .cv * .roundedpic{
 	display: block; border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px; margin-right:1em;
+	position:relative;
+	z-index: 100;
+width: 128px !important;
+	height: 128px !important;
 }
 
-#cvpic:hover, #cvpic:focus, #cvpic:active{
-	    content:url("/img/pic2.png");
-}
-
-#cvpic{
-width: 128px;
-	height: 128px;
-}
+#cvpic, #cvpicspan:hover #cvpic2, #cvpicspan:focus #cvpic2, #cvpicspan:active #cvpic2{
+	display:block
+ }
+ #cvpic2, #cvpicspan:hover #cvpic, #cvpicspan:focus #cvpic, #cvpicspan:active #cvpic{
+	display:none
+ }
 
 
 .cv #cvheader {
