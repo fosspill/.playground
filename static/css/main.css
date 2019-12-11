@@ -25,6 +25,10 @@ a.no-style , a.no-style:visited, a.no-style:focus, a.no-style:hover, a.no-style:
 
 /* START CV STYLE! */
 
+.cv .extra-spacing{
+	padding-top:0.25em;
+	padding-bottom: 0.25em;
+}
 .cv * .roundedpic{
 	display: block; border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px; margin-right:1em;
 }
@@ -36,6 +40,9 @@ a.no-style , a.no-style:visited, a.no-style:focus, a.no-style:hover, a.no-style:
 
 .cv #cvheader {
 	display:flex; align-items:center;
+	padding-top:0.25em;
+	padding-bottom: 0.25em;
+	
 }
 
 .cv #cvcontent {
