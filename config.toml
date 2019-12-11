@@ -28,11 +28,11 @@ analytics = false
 [languages]
   [languages.en]
     contentDir = "content"
-    languageName = "🇬🇧"
+    languageName = "English"
     weight = 10
   [languages.no]
     contentDir = "content/norsk"
-    languageName = "🇳🇴"
+    languageName = "Norsk"
     weight = 20
 
 [menu]

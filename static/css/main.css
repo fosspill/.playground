@@ -34,13 +34,13 @@
 
 
 #translationslist a, #translationslist a:visited {
-	color: inherit;
-  	opacity: 50%;
+	color: white;
+  	opacity: 100%;
 }
 
-#translationslist a:hover, #translationslist a:hover, #translationslist a:hover{
+#translationslist a:hover, #translationslist a:focus, #translationslist a:active{
 	text-decoration: none;
-	opacity: 100%;
+	opacity: 50%;
 }
 
 /* END TRANSLATION LINKS STYLE */
