@@ -37,6 +37,11 @@ a.no-style , a.no-style:visited, a.no-style:focus, a.no-style:hover, a.no-style:
 	    content:url("/img/pic2.png");
 }
 
+#cvpic{
+width: 128px;
+	height: 128px;
+}
+
 
 .cv #cvheader {
 	display:flex; align-items:center;
