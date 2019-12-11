@@ -1,3 +1,6 @@
-[submodule "ffxiv-datamining"]
-	path = ffxiv-datamining
-	url = https://github.com/viion/ffxiv-datamining.git
+[submodule "themes/monopriv"]
+	path = themes/monopriv
+	url = https://gitlab.com/kskarthik/monopriv.git
+[submodule "static/ffxiv-datamining"]
+	path = static/ffxiv-datamining
+	url = https://github.com/xivapi/ffxiv-datamining.git

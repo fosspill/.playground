@@ -1,0 +1,10 @@
+
+{{ if and (.IsTranslated) (.Params.ShowLanguageButton) }}
+<div id="translationslist" class = "no-print">
+    {{ range .Translations }}
+
+        <a class="btn btn-sm btn-info" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a> 
+
+    {{ end }}
+</div>
+{{ end }}

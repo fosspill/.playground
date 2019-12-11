@@ -1,0 +1,76 @@
+baseURL = "/"
+title = "./"
+languagecode = "en"
+author = "Ole Erik Brennhagen"
+copyright = "Copyright © 2019"
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+theme = "monopriv"
+
+[params]
+about = "Developer, OpenSource Lover, SF Flow Maniac, SysAdmin"
+github = "https://github.com/fosspill"
+linkedin = "https://www.linkedin.com/in/ole-erik-brennhagen-551436b0/"
+trailhead= "https://trailblazer.me/id/obrennhagen"
+email = "web@elo.anonaddy.com"
+pubkey = "publickey.web@elo.anonaddy.com.asc"
+# site meta description
+metadesc = "Ramblings and documentation from a Tech mind regarding Salesforce, Service Cloud, Linux and almost anything else."
+# site meta keywords
+metakeys = "linux, salesforce, apex, sysadmin, salesforce administrator, blog, cv"
+# enable/disable disqus comments 
+disqus = false 
+# enable/disable google analytics 
+analytics = false 
+
+[languages]
+  [languages.en]
+    contentDir = "content"
+    languageName = "English"
+    weight = 10
+  [languages.no]
+    contentDir = "content/norsk"
+    languageName = "Norsk"
+    weight = 20
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true

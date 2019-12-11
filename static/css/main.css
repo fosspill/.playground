@@ -1,0 +1,67 @@
+/* Global Style Overrides */
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
+
+a.no-style , a.no-style:visited, a.no-style:focus, a.no-style:hover, a.no-style:active {
+		text-decoration: none;
+		color: white !important;
+}
+
+#rssbadge {
+	vertical-align:middle;
+	padding-bottom:0.10em;
+}
+
+
+/* End Global Style Overrides */
+
+
+
+/* START CV STYLE! */
+
+.cv .extra-spacing{
+	padding-top:0.25em;
+	padding-bottom: 0.25em;
+}
+.cv * .roundedpic{
+	display: block; border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px; margin-right:1em;
+}
+
+#cvpic:hover, #cvpic:focus, #cvpic:active{
+	    content:url("/img/pic2.png");
+}
+
+
+.cv #cvheader {
+	display:flex; align-items:center;
+	padding-top:0.25em;
+	padding-bottom: 0.25em;
+	
+}
+
+.cv #cvcontent {
+	column-count: 1; margin-top: 1em;
+}
+
+/* END CV STYLE! */
+
+/* START TRANSLATION LINKS STYLE */
+
+
+#translationslist a, #translationslist a:visited {
+	color: white;
+  	opacity: 100%;
+}
+
+#translationslist a:hover, #translationslist a:focus, #translationslist a:active{
+	text-decoration: none;
+	opacity: 50%;
+}
+
+/* END TRANSLATION LINKS STYLE */
