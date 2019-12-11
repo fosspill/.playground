@@ -2,7 +2,7 @@
 <div id="translationslist" class = "no-print">
     {{ range .Translations }}
 
-        <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a> 
+        <a class="btn btn-sm btn-info" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a> 
 
     {{ end }}
 </div>
