@@ -6,7 +6,7 @@
 }
 
 #cvpic:hover, #cvpic:focus, #cvpic:active{
-	    content:url("https://via.placeholder.com/128/09f/fff.png");
+	    content:url("/img/pic2.png");
 }
 
 
@@ -15,12 +15,26 @@
 }
 
 .cv #cvcontent {
-	column-count: 2; margin-top: 1em;
+	column-count: 1; margin-top: 1em;
 }
 
 /* END CV STYLE! */
 
+/* START TRANSLATION LINKS STYLE */
 
 #translationslist{
 	font-size: 2em;
 }
+
+
+#translationslist a, #translationslist a:visited {
+	color: inherit;
+  	opacity: 50%;
+}
+
+#translationslist a:hover, #translationslist a:hover, #translationslist a:hover{
+	text-decoration: none;
+	opacity: 100%;
+}
+
+/* END TRANSLATION LINKS STYLE */
