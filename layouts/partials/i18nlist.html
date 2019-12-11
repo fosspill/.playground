@@ -1,6 +1,5 @@
 {{ if .IsTranslated }}
-<h4>{{ i18n "translations" }}</h4>
-<div id="translationslist">
+<div id="translationslist" class = "no-print">
     {{ range .Translations }}
 
         <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a> 
