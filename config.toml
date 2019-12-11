@@ -25,6 +25,16 @@ disqus = false
 # enable/disable google analytics 
 analytics = false 
 
+[languages]
+  [languages.en]
+    contentDir = "content"
+    languageName = "🇬🇧"
+    weight = 10
+  [languages.no]
+    contentDir = "content/norsk"
+    languageName = "🇳🇴"
+    weight = 20
+
 [menu]
   [[menu.main]]
     identifier = "about"

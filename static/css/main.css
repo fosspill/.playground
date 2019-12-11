@@ -1,0 +1,26 @@
+
+/* START CV STYLE! */
+
+.cv * .roundedpic{
+	display: block; border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px; margin-right:1em;
+}
+
+#cvpic:hover, #cvpic:focus, #cvpic:active{
+	    content:url("https://via.placeholder.com/128/09f/fff.png");
+}
+
+
+.cv #cvheader {
+	display:flex; align-items:center;
+}
+
+.cv #cvcontent {
+	column-count: 2; margin-top: 1em;
+}
+
+/* END CV STYLE! */
+
+
+#translationslist{
+	font-size: 2em;
+}
