@@ -1,6 +1,7 @@
 <footer>
-  <div class="no-print container-fluid bg-dark text-white text-monospace text-center mt-4">
-    <small>{{.Site.Copyright}} | Powered by <a href="https://gohugo.io">Hugo</a></small>
+  <div id="footer" class="no-print container-fluid bg-dark text-white text-monospace text-center mt-4">
+    <small>{{.Site.Copyright}} | <a class="no-style" href="https://fosspill.mit-license.org/">MIT</a> | ❤ <a class="no-style" href="https://gohugo.io">Hugo</a> | <a target="_blank" href="{{ "index.xml" | absURL }}"><span id="rssbadge" class="badge badge-pill badge-light">RSS</span></a>
+</small>
   </div>
   {{ if .Site.Params.analytics }}
     {{ template "_internal/google_analytics.html" . }}  
