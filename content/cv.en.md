@@ -5,6 +5,7 @@ date: 2019-12-10T21:41:42+01:00
 draft: false
 type: cv
 layout: cv
+showlanguagebutton: true
 description: A hard-working and committed individual who is able to work well as part of a team as well as under own initiative. Has excellent communication skills and is able to liaise with colleagues and customers in a professional manner. Trustworthy and reliable and able to follow instructions to maintain a high work output with great accuracy and efficiency. Always smartly presented, easy to get on with and has excellent timekeeping skills.
 ---
 

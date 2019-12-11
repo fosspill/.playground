@@ -1,4 +1,5 @@
-{{ if .IsTranslated }}
+
+{{ if and (.IsTranslated) (.Params.ShowLanguageButton) }}
 <div id="translationslist" class = "no-print">
     {{ range .Translations }}
 

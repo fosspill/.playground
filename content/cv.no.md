@@ -5,6 +5,7 @@ date: 2019-12-10T21:41:42+01:00
 draft: false
 type: cv
 layout: cv
+showlanguagebutton: true
 description: Et hardtarbeidende og engasjert individ som er i stand til å jobbe godt som en del av et team så vel som på eget initiativ. Har gode kommunikasjonsevner og er i stand til å samarbeide med kolleger og kunder på en profesjonell måte. Pålitelig og pålitelig og i stand til å følge instruksjoner for å opprettholde en høy arbeidseffekt med stor nøyaktighet og effektivitet. Alltid smart presentert, lett å komme videre med og har gode timekeeping ferdigheter.
 ---
 
