@@ -1,4 +1,4 @@
 {{ if isset .Site.Params "email" }}
-<a href="mailto:{{ .Site.Param "email" }}">{{ index .Params 0 }}</a>{{ if isset .Site.Params "pubkey" }} <sup><a href="/{{ .Site.Param "pubkey" }}" download>pubkey</a></sup>
+<a href="mailto:{{ .Site.Param "email" }}">{{ index .Params 0 }}</a>{{ if isset .Site.Params "pubkey" }} <sup><a href="{{ .Site.Param "pubkey" | absURL }}" download>pubkey</a></sup>
 {{ end }}
 {{ end }}

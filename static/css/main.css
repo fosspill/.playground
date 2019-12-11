@@ -7,7 +7,21 @@
     }
 }
 
+
+a.no-style , a.no-style:visited, a.no-style:focus, a.no-style:hover, a.no-style:active {
+		text-decoration: none;
+		color: white !important;
+}
+
+#rssbadge {
+	vertical-align:middle;
+	padding-bottom:0.10em;
+}
+
+
 /* End Global Style Overrides */
+
+
 
 /* START CV STYLE! */
 
