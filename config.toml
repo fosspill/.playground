@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "./"
+title = ">sfdx force:apex:blog"
 languagecode = "en"
 author = "Ole Erik Brennhagen"
 copyright = "Copyright © 2019"
