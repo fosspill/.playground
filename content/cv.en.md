@@ -6,35 +6,56 @@ draft: false
 type: cv
 layout: cv
 showlanguagebutton: true
-description: A hard-working and committed individual who is able to work well as part of a team as well as under own initiative. Has excellent communication skills and is able to liaise with colleagues and customers in a professional manner. Trustworthy and reliable and able to follow instructions to maintain a high work output with great accuracy and efficiency. Always smartly presented, easy to get on with and has excellent timekeeping skills.
+description: Service-oriented and customer-focused, with a strong focus on customer satisfaction. He has extensive experience with systems such as Citrix, Windows Server, Xenserver, general network systems, development, Salesforce and other systems / applications. He is a good colleague with focus on good environment in the workplace, always pleasant and helpful.
 ---
-
-Core Qualifications
+Technical expertise
 ------------------
-- Trained in workplace health and safety.
-- Holds a current first-aid certificate.
-- Holds a current food hygiene certificate.
-- Excellent organisation skills.
-- Excellent computer skills (MS Office, using the internet).
-- Effective written and verbal communication skills.
+- Work in large and small Open Source environments
+- VMWare, Citrix, Xen and other virtualization platforms
+- Linux and Windows Server and Client
+- Azure, intune, Active Directory, Azure Directory, Office 365
+- Agresso, Raiser's Edge, Salesforce and other CRM systems
+- Python, Bash, Powershell and other script / programming languages
 
 Experience
 ------------------
-January 2008 - September 2010 Cleaning Assistant, Sunnyside Care Home, Woking, Surrey
-- Carrying out cleaning according to laid down procedures.
-- Operating cleaning equipment.
-- Keeping the home neat and tidy.
-- Administering first aid when on duty as a designated workplace first aider.
-October 2010 - June 2016 Shop Sales Assistant, First Fashion Stores, Woking, Surrey
-- Assisting customers with purchases.
-- Communicating information to customers on the brand's clothing range.
-- Answering telephone and email enquiries.
-- Taking payments in cash and by credit/debit card.
+August 2018 - Ongoing, *CRM IT Technical Manager*, Save the Children
+- Close cooperation with external technical partners.
+- Project work with Salesforce and related integrations.
+    - Aggresso, SMS system, Deploy and more.
+- Working methodology based on DevOps
+- Volunteering and Service Cloud development projects.
+
+________________
+
+February 2017 - August 2018, *IT Consultant*, IBM, Operations Manager
+- Sysadmin for Save the Children.
+- Involved in Salesforce and other projects.
+- Application operation and support for several national and international companies.
+________________
+
+June 2014 - February 2017, *IT Consultant*, Evry ASA, 2/3. Line
+- Deeper technical work for more customers.
+    - Citrix, network, Windows server and other applications
+- Customer team leader for Save the Children. This included attending customer meetings and daily meetings with the operator.
+- Execution of Office 365 and Azure projects.
+________________
+
+June 2010 - June 2014, *IT Consultant*, Evry ASA, Service Desk
+- Technical support for several external customers by email and telephone.
+- Close contact with operators.
+________________
+June 2008 - June 2010, *IT Apprentice*, Buskerud University College
+- Technical service on student equipment.
+- Support for the college's systems on the telephone and face to face.
+- Some operation of local backup.
 
 Education
 ------------------
-2005 GCSEs in English (C) and Maths (C) 2006 Woking College, NVQ in Cleaning and Support Services
+2007 - 2008
 
-Conclusion
-------------------
-This Simple CV Sample is just one of a number of excellent samples you can use to create an effective CV. When you're searching for jobs, the CVs and tools on our site will guide you through the process of writing your curriculum vitae and applying for jobs.
+* ICT Service Subject *, Hønefoss VGS
+
+2006 - 2007
+
+* Electronics *, Hønefoss VGS

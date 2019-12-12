@@ -6,35 +6,56 @@ draft: false
 type: cv
 layout: cv
 showlanguagebutton: true
-description: Et hardtarbeidende og engasjert individ som er i stand til å jobbe godt som en del av et team så vel som på eget initiativ. Har gode kommunikasjonsevner og er i stand til å samarbeide med kolleger og kunder på en profesjonell måte. Pålitelig og pålitelig og i stand til å følge instruksjoner for å opprettholde en høy arbeidseffekt med stor nøyaktighet og effektivitet. Alltid smart presentert, lett å komme videre med og har gode timekeeping ferdigheter.
+description: Serviceorientert og kundebevisst med stort fokus på kunders tilfredshet. Han har god erfaring med systemer som Citrix, Windows Server, Xenserver, generelle nettverkssystemer, utvikling, Salesforce og andre systemer/applikasjoner. Han er en trivelig arbeidskollega med fokus på godt miljø på arbeidsplassen, alltid hyggelig og behjelpelig.
 ---
-
-Kjernekvalifikasjoner
+Teknisk kompetanse
 ------------------
-- Trent i helse og sikkerhet på arbeidsplassen.
-- Inneholder et gjeldende førstehjelpsattest.
-- Inneholder et gjeldende sertifikat for mathygiene.
-- Utmerkede organisasjonsevner.
-- Utmerkede datakunnskaper (MS Office, bruker internett).
-- Effektive skriftlige og muntlige kommunikasjonsevner.
+- Arbeid i store og små Open Source miljøer
+- VMWare, Citrix, Xen og andre virtualiseringsplattformer
+- Linux og Windows Server og Klient
+- Azure, intune, Active Directory, Azure Directory, Office 365
+- Agresso, Raiser’s Edge, Salesforce og andre CRM systemer
+- Python, Bash, Powershell og andre script/programmeringsspråk
 
 Erfaring
 ------------------
-Januar 2008 - september 2010 rengjøringsassistent, Sunnyside omsorgshjem, Woking, Surrey
-- Gjennomføring av rengjøring i henhold til fastsatte prosedyrer.
-- Drift av rengjøringsutstyr.
-- Å holde hjemmet pent og ryddig.
-- Administrering av førstehjelp når du er på vakt som utpekt førstehjelp.
-Oktober 2010 - juni 2016 Butikkassistent, First Fashion Stores, Woking, Surrey
-- Hjelpe kunder med kjøp.
-- Formidle informasjon til kundene på merkevarens klesutvalg.
-- Besvare telefon- og e-posthenvendelser.
-- Å ta betalinger kontant og med kreditt- / debetkort.
+August 2018 - Pågående, *CRM IT Technical Manager*, Redd Barna
+- Tett samarbeid med eksterne tekniske partnere.
+- Prosjektarbeid med Salesforce og tilhørende integrasjoner.
+    - Agresso, SMS-system, Deploy og annet.
+- Arbeidsmetodikk basertpå DevOps
+- Utviklingsprosjekter innenfor frivillighetsbehandling og Service Cloud.
 
-utdanning
-------------------
-2005 GCSEs in English (C) and Maths (C) 2006 Woking College, NVQ in Cleaning and Support Services
+________________
 
-Konklusjon
+Februar 2017 - August 2018, *IT Konsulent*, IBM, Driftsansvarlig
+- Driftsansvarlig for Redd Barna.
+- Involvert i Salesforce og andre prosjekter.
+- Applikasjonsdrift og support for flere nasjonale og internasjonale selskaper.
+________________
+
+Juni 2014 - Februar 2017, *IT Konsulent*, Evry ASA, 2./3. Linje
+- Dypere teknisk arbeid for flere kunder.
+    - Citrix, nettverk, Windows server og andre applikasjoner 
+- Kundeteamleder for Redd Barna. Innebar blandt annet deltagelse på kundemøter og daglige møter med driftsansvarlig.
+- Utføring av Office 365 og Azure prosjekter.
+________________
+
+Juni 2010 - Juni 2014, *IT Konsulent*, Evry ASA, Servicedesk
+- Teknisk support for flere eksterne kunder på epost og telefon.
+- Tett kontakt med driftsansvarlige.
+________________
+Juni 2008 - Juni 2010, *IT-Lærling*, Høgskolen i Buskerud
+- Teknisk service på studenters utstyr.
+- Support for høgskolens systemer på telefon og ansikt til ansikt.
+- Noe drift av lokal backup.
+
+Utdanning
 ------------------
-Denne enkle CV-prøven er bare en av flere utmerkede prøver du kan bruke for å lage en effektiv CV. Når du søker etter jobber, vil CVene og verktøyene på nettstedet vårt guide deg gjennom prosessen med å skrive CV og søke på jobber.
+2007 - 2008
+
+*IKT-Servicefag*, Hønefoss VGS
+
+2006 - 2007
+
+*Elektronikk*, Hønefoss VGS
