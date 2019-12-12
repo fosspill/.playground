@@ -3,7 +3,7 @@ categories:
 - Development
 series:
 - Flows
-slug: hugo
+slug: flow-mass-email
 tags:
 - Development
 - Salesforce
