@@ -1,16 +1,16 @@
 ---
 categories:
 - Development
-project_url: https://github.com/gohugoio/hugo
 series:
-- Go Web Dev
+- Flows
 slug: hugo
 tags:
 - Development
-- Go
-- fast
-- Blogging
-title: "My First Post"
+- Salesforce
+- Apex
+- SOQL
+- Flow
+title: "Salesforce Lightning Flow- Mass Email to custom object"
 date: 2019-12-10T21:50:12+01:00
 draft: false
 ---
