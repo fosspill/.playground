@@ -54,8 +54,8 @@ Education
 ------------------
 2007 - 2008
 
-* ICT Service Subject *, Hønefoss VGS
+*ICT Service and Operations*, Hønefoss VGS
 
 2006 - 2007
 
-* Electronics *, Hønefoss VGS
+*Electronics*, Hønefoss VGS
