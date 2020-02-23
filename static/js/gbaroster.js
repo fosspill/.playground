@@ -101,7 +101,7 @@ async function getChars(a) {
     var index, len;
     for (index = 0, len = a.length; index < len; ++index) {
         var starttime = Date.now()
-        fetch('https://xivapi.com/character/' + a[index].ID)
+        fetch('https://xivapi.com/character/' + a[index].ID + '?data=CJ')
             .then(response => {
                 return response.json()
             })
