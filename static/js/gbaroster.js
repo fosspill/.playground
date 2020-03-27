@@ -1,4 +1,5 @@
-var staticgrp = [24368520, 24368612, 21819678, 24364510, 24251684];
+//var staticgrp = [24368520, 24368612, 21819678, 24364510, 24251684];
+var staticgrp = [{ID:24368520},{ID:24368612},{ID:24364510},{ID:24251684}]
 var maxlvl = 80;
 
 //python3 classjobscsvtorolelistpy
