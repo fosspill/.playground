@@ -1,5 +1,4 @@
-//var staticgrp = [24368520, 24368612, 21819678, 24364510, 24251684];
-var staticgrp = [{ID:24368520},{ID:24368612},{ID:24364510},{ID:24251684}]
+var staticgrp = [24368520, 24368612, 21819678, 24364510, 24251684, 14590305];
 var maxlvl = 80;
 
 //python3 classjobscsvtorolelistpy
@@ -85,7 +84,12 @@ async function getFc() {
             document.getElementById("head").innerHTML += "<h1>" + data["FreeCompany"].Name + "</h1>";
             var memArray = data["FreeCompanyMembers"];
             if (memArray.length > 0){
-            getChars(memArray);
+		     var index, len;
+		     var cleanmemArray = [];
+    		     for (index = 0, len = memArray.length; index < len; ++index) {
+			     cleanmemArray.push(memArray[index].ID)
+		     }
+            getChars(cleanmemArray);
 	    } else {
 	   	errorout("Membersarray is empty.")
 	    }
@@ -102,7 +106,7 @@ async function getChars(a) {
     var index, len;
     for (index = 0, len = a.length; index < len; ++index) {
         var starttime = Date.now()
-        fetch('https://xivapi.com/character/' + a[index].ID + '?data=CJ')
+        fetch('https://xivapi.com/character/' + a[index] + '?data=CJ')
             .then(response => {
                 return response.json()
             })
