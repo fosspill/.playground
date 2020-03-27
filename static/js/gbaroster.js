@@ -84,10 +84,24 @@ async function getFc() {
             document.getElementById("head").innerHTML += "<h1>" + data["FreeCompany"].Name + "</h1>";
             var memArray = data["FreeCompanyMembers"];
             if (memArray.length > 0){
-            getChars(memArray);
+		     var index, len;
+		     var cleanmemArray = [];
+    		     for (index = 0, len = memArray.length; index < len; ++index) {
+			     cleanmemArray.push(memArray[index].ID)
+		     }
+ 		if (staticgrp.length > 0){
+		     var index, len;
+    		     for (index = 0, len = staticgrp.length; index < len; ++index) {
+			            if (!(cleanmemArray.includes(staticgrp[index]))) {
+					cleanmemArray.push(staticgrp[index])
+					} 
+		     }
+	    }
+            getChars(cleanmemArray);
 	    } else {
 	   	errorout("Membersarray is empty.")
 	    }
+	   
 
         })
         .catch(err => {
@@ -101,7 +115,7 @@ async function getChars(a) {
     var index, len;
     for (index = 0, len = a.length; index < len; ++index) {
         var starttime = Date.now()
-        fetch('https://xivapi.com/character/' + a[index].ID + '?data=CJ')
+        fetch('https://xivapi.com/character/' + a[index] + '?data=CJ')
             .then(response => {
                 return response.json()
             })
