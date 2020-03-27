@@ -89,10 +89,19 @@ async function getFc() {
     		     for (index = 0, len = memArray.length; index < len; ++index) {
 			     cleanmemArray.push(memArray[index].ID)
 		     }
+ 		if (staticgrp.length > 0){
+		     var index, len;
+    		     for (index = 0, len = staticgrp.length; index < len; ++index) {
+			            if (!(cleanmemArray.includes(staticgrp[index]))) {
+					cleanmemArray.push(staticgrp[index])
+					} 
+		     }
+	    }
             getChars(cleanmemArray);
 	    } else {
 	   	errorout("Membersarray is empty.")
 	    }
+	   
 
         })
         .catch(err => {
