@@ -62,6 +62,44 @@ input[type="submit"]{
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
+
+#candle1{
+  transform: rotate(3deg);
+}
+
+#candle2{
+
+  transform: rotate(6deg) scale(0.90);
+}
+
+#candle3{
+  transform: rotate(-4deg);
+}
+
+#candle4{
+  transform: scale(0.95);
+}
+
+#candle5{
+  transform: rotate(5deg);
+}
+
+#candle6{
+}
+
+#candle7{
+  transform: rotate(-1deg) scale(1.1);
+}
+
+#candle8{
+  transform: rotate(1deg) scale(1.1);
+}
+
+#candle9{
+  transform: rotate(3deg);
+}
+#candle10{
+}
 </style>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -126,7 +164,7 @@ for (var i=0; i<divChildren.length; i++) {
 document.getElementById('addcandle').onclick = function(){
 if (activeCandles < 10) {
 	activeCandles = activeCandles + 1
-	document.getElementById('candle' + activeCandles).src="loop3.gif";
+	document.getElementById('candle' + activeCandles).src="loop" + activeCandles + ".gif";
 	candles.push(setTimeout(function(){ excinguishCandle(); }, getRndInteger(7200, 10800)));
 	console.log(candles)
 };

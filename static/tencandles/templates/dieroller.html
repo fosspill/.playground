@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Die Roller</title>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
+    <style>
+
+</style>
+  </head>
+  <body>
+  
+  <form id="rollin" action="rolldie" method="GET">
+  <input id="user" name="user" type="text" placeholder="Name">
+  <input type="number" id="dice" name="dice" min="1" max="10" placeholder="#Dice">
+    <input type="submit" id="submit" name="submit">
+  </form>
+  <div id="rolls">
+  <div id="player_rolls">
+  
+  </div>
+  
+  <div id="gm_roll">
+  </div>
+  </div>
+  
+  <script>
+  
+$("#rollin").submit(function(e) {
+
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+        var form = $(this);
+    if ($('#user').val() === 'GM'){
+        var url = 'rolldie-gm';
+    } else {
+        var url = form.attr('action');
+    }
+
+
+    $.ajax({
+           type: "GET",
+           url: url,
+           data: form.serialize(), // serializes the form's elements.
+           success: function(data)
+           {
+           }
+         });
+
+
+});
+function fetchData() {
+
+$.getJSON( "/rolls", function( data ) {
+  var items = [];
+  $.each( data, function( key, val ) {
+    items.push( "<p id='" + key + "'>" + key + ": " + val + "</p>" );
+  });
+ $('#player_rolls').html( items.join( "" ));
+
+});
+
+
+$.getJSON( "/rolls-gm", function( data ) {
+if (data){
+$('#gm_roll').html("<p>GM: " + data + "</p>")
+}
+
+});
+
+  
+ };
+   $(function() {
+      setInterval(function() {fetchData()}, 2000);
+  });
+  </script>
+  </body>
+</html>
