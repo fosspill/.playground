@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+<style>
+body {
+  background-color: #010007;
+}
+#candlescontainer{
+	padding-top: 1em;
+}
+
+    img{
+        max-width: 19%;
+        max-height: 19%;
+        display: inline-block; /* remove extra space below image */
+    }
+</style>
+</head>
+
+<body>
+<button id="addcandle" type="button">Light a Candle</button><button id="extinguishcandle" type="button">Extinguish a Candle</button>
+
+<div id="candlescontainer">
+<img id="candle1" src="unlit.png">
+<img id="candle2" src="unlit.png">
+<img id="candle3" src="unlit.png">
+<img id="candle4" src="unlit.png">
+<img id="candle5" src="unlit.png">
+<img id="candle6" src="unlit.png">
+<img id="candle7" src="unlit.png">
+<img id="candle8" src="unlit.png">
+<img id="candle9" src="unlit.png">
+<img id="candle10" src="unlit.png">
+
+</div>
+
+<script type="text/javascript">
+var activeCandles = 0;
+var candles = [];
+function getRndInteger(min = 7200, max = 10800) {
+  return (Math.floor(Math.random() * (max - min + 1) ) + min)*1000;
+}
+
+function excinguishCandle() {
+  if (activeCandles > 0) {
+var div = document.getElementById('candlescontainer'),
+    divChildren = div.childNodes;
+
+for (var i=0; i<divChildren.length; i++) {
+   
+   if (divChildren[i].src){
+           if ( divChildren[i].src.endsWith("end.gif")){
+    	    divChildren[i].src = "unlit.png";
+    }
+   }
+
+
+
+}
+	document.getElementById('candle' + activeCandles).src="end.gif";
+	activeCandles = activeCandles - 1
+	candles.shift()
+	console.log(candles)
+	
+}
+}
+
+
+
+document.getElementById('addcandle').onclick = function(){
+if (activeCandles < 10) {
+	activeCandles = activeCandles + 1
+	document.getElementById('candle' + activeCandles).src="loop3.gif";
+	candles.push(setTimeout(function(){ excinguishCandle(); }, getRndInteger(10, 30)));
+	console.log(candles)
+};
+
+}
+
+document.getElementById('extinguishcandle').onclick = function(){
+      excinguishCandle()
+
+      
+};
+</script>
+</body>
+</html>
