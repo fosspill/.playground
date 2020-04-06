@@ -4,9 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <title>Ten Candles</title>
 
 <style>
 body {
@@ -78,7 +76,7 @@ document.getElementById('addcandle').onclick = function(){
 if (activeCandles < 10) {
 	activeCandles = activeCandles + 1
 	document.getElementById('candle' + activeCandles).src="loop3.gif";
-	candles.push(setTimeout(function(){ excinguishCandle(); }, getRndInteger(10, 30)));
+	candles.push(setTimeout(function(){ excinguishCandle(); }, getRndInteger(7200, 10800)));
 	console.log(candles)
 };
 
