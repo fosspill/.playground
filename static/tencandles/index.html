@@ -9,9 +9,11 @@
 <style>
 body {
   background-color: #010007;
+
+  cursor: url('cursor.png'), auto;	
 }
 #candlescontainer{
-	padding-top: 1em;
+	padding-top: 10%;
 }
 
     img{
@@ -19,11 +21,54 @@ body {
         max-height: 19%;
         display: inline-block; /* remove extra space below image */
     }
+    
+#camcontainer{
+max-width: 40%;
+}
+
+#videoElement{
+max-width: inherit;
+}
+
+.btn-white{
+    border:none;
+    background: transparent;
+    color: #fff !important;
+}
+.btn-white:hover{
+    border:none;
+    background: #fff;
+    color: #1f1f1f !important;
+    
+}
+
+.btn,
+input[type="submit"]{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; font-weight:400;
+    letter-spacing: 3px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
 </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
-<button id="addcandle" type="button">Light a Candle</button><button id="extinguishcandle" type="button">Extinguish a Candle</button>
+<a id="addcandle" class="btn btn-white noselect">Light</a> | 
+<a id="extinguishcandle" class="btn btn-white noselect">Extinguish</a>		
 
 <div id="candlescontainer">
 <img id="candle1" src="unlit.png">
@@ -39,6 +84,11 @@ body {
 
 </div>
 
+<div id="camcontainer" style="display:none;">
+	<video autoplay="true" id="videoElement">
+	
+	</video>
+</div>
 <script type="text/javascript">
 var activeCandles = 0;
 var candles = [];
@@ -87,6 +137,24 @@ document.getElementById('extinguishcandle').onclick = function(){
 
       
 };
+
+var video = document.querySelector("#videoElement");
+var container = document.querySelector("#camcontainer");
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+      container.style.display = "block";
+    })
+    .catch(function (err0r) {
+      console.log("Something went wrong!");
+    });
+}
+
+  $( function() {
+    $( "#camcontainer" ).draggable();
+  } );
+
 </script>
 </body>
 </html>
