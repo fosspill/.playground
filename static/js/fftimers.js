@@ -36,8 +36,9 @@ function timerTo(elementid, cddate, title) {
 }
 
 $(document).ready(function() {
-//Static timer. Finds next friday and counts down.  
-timerTo("statictimer", getNextDayOfWeek(3), "Static");
+//Static timer. Finds next Tuesday and Thursday and counts down.  
+timerTo("statictimer", getNextDayOfWeek(2), "Tuesday Static");
+timerTo("statictimer", getNextDayOfWeek(4), "Thursday Static");
 
 //Custom timer example
 //var now = new Date();
@@ -46,6 +47,13 @@ timerTo("statictimer", getNextDayOfWeek(3), "Static");
 //weddingdate.setUTCDate(17);
 //weddingdate.setUTCHours(17, 00, 00, 00);
 //timerTo("weddingtimer", weddingdate, "Wedding");
+
+var now = new Date();
+var patchdate = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
+patchdate.setUTCMonth(8);
+patchdate.setUTCDate(11);
+patchdate.setUTCHours(10, 00, 00, 00);
+timerTo("patchtimer", patchdate, "Patch 5.3");
 
 
 
