@@ -50,7 +50,7 @@ timerTo("static2timer", getNextDayOfWeek(4), "Thursday Static");
 
 var now = new Date();
 var patchdate = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
-patchdate.setUTCMonth(8);
+patchdate.setUTCMonth(7);
 patchdate.setUTCDate(11);
 patchdate.setUTCHours(10, 00, 00, 00);
 timerTo("patchtimer", patchdate, "Patch 5.3");
