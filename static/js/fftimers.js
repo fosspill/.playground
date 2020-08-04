@@ -37,8 +37,8 @@ function timerTo(elementid, cddate, title) {
 
 $(document).ready(function() {
 //Static timer. Finds next Tuesday and Thursday and counts down.  
-timerTo("statictimer", getNextDayOfWeek(2), "Tuesday Static");
-timerTo("statictimer", getNextDayOfWeek(4), "Thursday Static");
+timerTo("static1timer", getNextDayOfWeek(2), "Tuesday Static");
+timerTo("static2timer", getNextDayOfWeek(4), "Thursday Static");
 
 //Custom timer example
 //var now = new Date();
