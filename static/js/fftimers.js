@@ -37,7 +37,7 @@ function timerTo(elementid, cddate, title) {
 
 $(document).ready(function() {
 //Static timer. Finds next Tuesday and Thursday and counts down.  
-timerTo("static1timer", getNextDayOfWeek(2), "Tuesday Static");
+timerTo("static1timer", getNextDayOfWeek(3), "Wednesday Static");
 timerTo("static2timer", getNextDayOfWeek(4), "Thursday Static");
 
 //Custom timer example
@@ -47,13 +47,6 @@ timerTo("static2timer", getNextDayOfWeek(4), "Thursday Static");
 //weddingdate.setUTCDate(17);
 //weddingdate.setUTCHours(17, 00, 00, 00);
 //timerTo("weddingtimer", weddingdate, "Wedding");
-
-var now = new Date();
-var patchdate = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
-patchdate.setUTCMonth(7);
-patchdate.setUTCDate(11);
-patchdate.setUTCHours(10, 00, 00, 00);
-timerTo("patchtimer", patchdate, "Patch 5.3");
 
 
 
