@@ -4,7 +4,7 @@ var date = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), n
 var resultDate = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
 
     resultDate.setUTCDate(date.getUTCDate() + ((7-date.getUTCDay())%7+dayOfWeek) % 7);
-    resultDate.setUTCHours(17, 00, 00, 00)
+    resultDate.setUTCHours(17, 30, 00, 00)
     console.log(resultDate);
     return resultDate;
 }
@@ -47,6 +47,13 @@ timerTo("static2timer", getNextDayOfWeek(4), "Thursday Static");
 //weddingdate.setUTCDate(17);
 //weddingdate.setUTCHours(17, 00, 00, 00);
 //timerTo("weddingtimer", weddingdate, "Wedding");
+var now = new Date();
+var babydate = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
+babydate.setUTCFullYear(2021);
+babydate.setUTCMonth(4);
+babydate.setUTCDate(11);
+babydate.setUTCHours(13, 00, 00, 00);
+timerTo("babytimer", babydate, "Little Dazkar");
 
 
 
