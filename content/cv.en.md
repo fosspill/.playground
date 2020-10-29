@@ -35,15 +35,15 @@ February 2017 - August 2018, *IT Consultant*, IBM, Operations Manager
 ________________
 
 June 2014 - February 2017, *IT Consultant*, Evry ASA, 2/3. Line
-- Deeper technical work for more customers.
+- Deep technical work for customers.
     - Citrix, network, Windows server and other applications
-- Customer team leader for Save the Children. This included attending customer meetings and daily meetings with the operator.
-- Execution of Office 365 and Azure projects.
+- Customer team leader for Save the Children. This included attending customer meetings and daily meetings with the sysadmin.
+- Delivery of Office 365 and Azure projects.
 ________________
 
 June 2010 - June 2014, *IT Consultant*, Evry ASA, Service Desk
 - Technical support for several external customers by email and telephone.
-- Close contact with operators.
+- Close contact with sysadmins.
 ________________
 June 2008 - June 2010, *IT Apprentice*, Buskerud University College
 - Technical service on student equipment.
