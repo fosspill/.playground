@@ -20,13 +20,12 @@ Technical expertise
 Experience
 ------------------
 August 2018 - Ongoing, *CRM IT Technical Manager*, Save the Children Norway
-- Close cooperation with external technical partners.
 - Project work with Salesforce and related integrations.
     - Aggresso, SMS system, Deployment systems and more.
-- Working methodology based on DevOps
+- Agile working methodology based on DevOps.
 - Data and lead management for Volunteers in Salesforce.
 - Full Service Cloud delivery, including requirement discovery and project management.
-
+- Close cooperation with external technical partners.
 ________________
 
 February 2017 - August 2018, *IT Consultant*, IBM, Operations Manager
