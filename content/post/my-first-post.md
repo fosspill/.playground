@@ -1,17 +1,17 @@
 ---
 categories:
 - Development
-project_url: https://github.com/gohugoio/hugo
-series:
-- Go Web Dev
-slug: hugo
+- Salesforce
+slug: Dreamforce
 tags:
 - Development
-- Go
-- fast
-- Blogging
-title: "My First Post"
-date: 2019-12-10T21:50:12+01:00
-draft: true
+- Salesforce
+- Dreamforce
+title: "Dreamforce 2020 registrations are live!"
+date: 2020-10-10T21:50:12+01:00
+draft: false
 ---
-This is the best post ever made in the world
+
+[![Dreamforce 2020 Image](https://c1.sfdcstatic.com/content/dam/web/en_us/events-master/dreamforcetoyou2020/df2u-logo.png)](https://www.salesforce.com/dreamforce/)
+
+The registration page is live and it is free!
