@@ -20,9 +20,9 @@ Technical expertise
 Experience
 ------------------
 August 2018 - Ongoing, *CRM IT Technical Manager*, Save the Children Norway
-- Project work with Salesforce and related integrations.
+- Agile work with a focus on Salesforce and related integrations.
     - Aggresso, SMS system, Deployment systems and more.
-- Agile working methodology based on DevOps.
+- Business partnering and requirement gathering.
 - Data and lead management for Volunteers in Salesforce.
 - Full Service Cloud delivery, including requirement discovery and project management.
 - Close cooperation with external technical partners.
@@ -47,8 +47,8 @@ June 2010 - June 2014, *IT Consultant*, Evry ASA, Service Desk
 ________________
 June 2008 - June 2010, *IT Apprentice*, Buskerud University College
 - Technical service on student equipment.
-- Support for the college's systems on the telephone and face to face.
-- Some operation of local backup.
+- Support for the college's systems by phone and face to face.
+
 
 Education
 ------------------
