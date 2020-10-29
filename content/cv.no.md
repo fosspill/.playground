@@ -20,12 +20,12 @@ Teknisk kompetanse
 Erfaring
 ------------------
 August 2018 - Pågående, *CRM IT Technical Manager*, Redd Barna
-- Tett samarbeid med eksterne tekniske partnere.
-- Prosjektarbeid med Salesforce og tilhørende integrasjoner.
+- Agilt arbeid med Salesforce og tilhørende integrasjoner.
     - Agresso, SMS-system, Deployments og annet.
-- Agil arbeidsmetodikk basert på DevOps
+- Business Partnering og innsamling av krav på tvers av organisasjonen.
 - Utvikling av reise for Frivillige i Salesforce. Fra Lead til fullverdig Frivillig.
 - Full Service Cloud leveranse inkludert kravspesifikasjon og prosjekt styring.
+- Tett samarbeid med eksterne tekniske partnere.
 ________________
 
 Februar 2017 - August 2018, *IT Konsulent*, IBM, Driftsansvarlig
