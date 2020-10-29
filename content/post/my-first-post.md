@@ -15,3 +15,5 @@ draft: false
 [![Dreamforce 2020 Image](https://c1.sfdcstatic.com/content/dam/web/en_us/events-master/dreamforcetoyou2020/df2u-logo.png)](https://www.salesforce.com/dreamforce/)
 
 The registration page is live and it is free!
+
+Go to https://www.salesforce.com/dreamforce/ to sign up and experience Dreamforce from your own home.
