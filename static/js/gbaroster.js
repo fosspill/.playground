@@ -210,7 +210,7 @@ async function getChars(a) {
                 errorout(err);
             })
         var endtime = Date.now()
-        await sleep(400);
+        await sleep(1250);
     }
 
 
