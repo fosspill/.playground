@@ -10,6 +10,7 @@ description: Serviceorientert og kundebevisst med stort fokus på kunders tilfre
 ---
 Teknisk kompetanse
 ------------------
+- Salesforce Process Automation
 - Arbeid i store og små Open Source miljøer
 - VMWare, Citrix, Xen og andre virtualiseringsplattformer
 - Linux og Windows Server og Klient
@@ -19,7 +20,13 @@ Teknisk kompetanse
 
 Erfaring
 ------------------
-August 2018 - Pågående, *CRM IT Technical Manager*, Redd Barna
+Februar 2021 - pågående, *Salesforce Business Consultant*, Fluido
+- Agilt arbeid med Salesforce-prosjekter.
+- Optimalisering av eksisterende automatiseringsløsninger.
+- Utvikling av nye automatiseringsløsninger.
+- Arbeid med Pardot, Marketing Cloud, Service Cloud, Field Service og Sales Cloud.
+________________
+August 2018 - Februar 2021, *CRM IT Technical Manager*, Redd Barna
 - Agilt arbeid med Salesforce og tilhørende integrasjoner.
     - Agresso, SMS-system, Deployments og annet.
 - Business Partnering og innsamling av krav på tvers av organisasjonen.
