@@ -50,7 +50,7 @@ timerTo("static2timer", getNextDayOfWeek(4), "Thursday Static");
 var now = new Date();
 var babydate = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
 babydate.setUTCFullYear(2021);
-babydate.setUTCMonth(4);
+babydate.setUTCMonth(3);
 babydate.setUTCDate(16);
 babydate.setUTCHours(13, 00, 00, 00);
 timerTo("babytimer", babydate, "Little Dazkar");
