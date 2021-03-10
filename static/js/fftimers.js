@@ -4,7 +4,7 @@ var date = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), n
 var resultDate = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
 
     resultDate.setUTCDate(date.getUTCDate() + ((7-date.getUTCDay())%7+dayOfWeek) % 7);
-    resultDate.setUTCHours(17, 30, 00, 00)
+    resultDate.setUTCHours(19, 00, 00, 00)
     console.log(resultDate);
     return resultDate;
 }
