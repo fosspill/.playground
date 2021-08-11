@@ -19,7 +19,13 @@ Technical expertise
 
 Experience
 ------------------
-August 2018 - Ongoing, *CRM IT Technical Manager*, Save the Children Norway
+Februar 2021 - current, *Salesforce Solution Consultant*, Fluido
+- Agile work with Salesforce projects.
+- Optimization of existing automation solutions.
+- Development of new automation solutions.
+- Work with Pardot, Marketing Cloud, Service Cloud, Field Service and Sales Cloud.
+________________
+August 2018 - February 2021, *CRM IT Technical Manager*, Save the Children Norway
 - Agile work with a focus on Salesforce and related integrations.
     - Aggresso, SMS system, Deployment systems and more.
 - Business partnering and requirement gathering.
