@@ -1,6 +1,6 @@
 ---
 title: "Ole Erik Brennhagen"
-subtitle: "40343210 | Rødstuveien 17, 0572 Oslo | oleerik@brennhagen.no"
+subtitle: "40343210 | Rødstuveien 19, 0572 Oslo | oleerik@brennhagen.no"
 date: 2019-12-10T21:41:42+01:00
 draft: false
 type: cv
