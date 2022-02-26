@@ -1,10 +1,10 @@
 var staticgrp = [24368520, 24368612, 24251684, 15657631, 14590305, 14802415, 24116747, 312025];
-var maxlvl = 80;
+var maxlvl = 90;
 
 //python3 classjobscsvtorolelistpy
 var tanks = [1, 3, 19, 21, 32, 37 ]
-var healers = [6, 24, 28, 33 ]
-var dps = [2, 4, 5, 7, 20, 22, 23, 25, 26, 27, 29, 30, 31, 34, 35, 36, 38 ]
+var healers = [6, 24, 28, 33, 40 ]
+var dps = [2, 4, 5, 7, 20, 22, 23, 25, 26, 27, 29, 30, 31, 34, 35, 36, 38, 39 ]
 
 Array.prototype.keySort = function(key, desc){
   this.sort(function(a, b) {
